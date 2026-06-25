@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI·데이터 교육사업 운영 포트폴리오 · 2022–2025</title>
-<meta name="description" content="공공기관·기업의 AI·데이터·AX 교육사업을 기획·운영부터 성과확산까지 수행한 2022–2025년 운영 기록.">
+<title>AI·데이터 교육사업 기획·운영 포트폴리오</title>
+<meta name="description" content="공공기관·기업 대상 AI·데이터 교육사업의 제안, 과정기획, 운영관리, 성과보고까지 수행한 교육사업 PM 경력 포트폴리오입니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -87,7 +87,7 @@
     margin:.55em 0 .4em;
   }
   .hero .lede{
-    max-width:42ch;
+    max-width:72ch;
     color:var(--ink-soft);
     font-size:clamp(1rem,1.6vw,1.18rem);
     line-height:1.7;
@@ -178,7 +178,7 @@
 
   .meta{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:1px;
     background:var(--line);
     border:1px solid var(--line);
@@ -203,6 +203,8 @@
   .result{background:var(--paper-2);padding:22px 20px;}
   .result .rv{font-family:var(--sans);font-weight:700;font-size:1.08rem;color:var(--accent);letter-spacing:-.01em;line-height:1.45;}
   .result .rl{display:block;margin-top:7px;font-size:.86rem;color:var(--ink-soft);}
+  .result .rt{margin:0 0 10px;font-size:1.02rem;font-weight:700;color:var(--accent);letter-spacing:-.01em;line-height:1.45;}
+  .result .rd{margin:0;font-size:.93rem;color:var(--ink-soft);line-height:1.65;}
 
   /* tasks */
   .tasks{margin:0 0 clamp(32px,5vw,44px);padding:0;list-style:none;}
@@ -210,25 +212,53 @@
   .tasks li:first-child{border-top:1px solid var(--line);}
   .tasks li::before{content:"";position:absolute;left:1px;top:18px;width:5px;height:5px;border-radius:50%;background:var(--accent);}
   .tasks li .m{color:var(--accent);font-weight:700;}
+  .task-rows{margin:8px 0 clamp(32px,5vw,44px);}
+  .task-row{display:grid;grid-template-columns:minmax(150px,210px) 1fr;gap:24px;align-items:start;padding:18px 0;border-bottom:1px solid rgba(210,219,212,.62);}
+  .task-row .tt{margin:0;font-weight:700;font-size:1rem;color:var(--ink);letter-spacing:-.01em;line-height:1.45;}
+  .task-row .td{margin:0;font-size:.93rem;color:var(--ink-soft);line-height:1.65;}
 
   /* deliverables */
   .deliv{margin:0 0 clamp(32px,5vw,44px);}
-  .deliv .items{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);line-height:2;}
-  .deliv .items span{white-space:nowrap;}
-  .deliv .items .sep{color:var(--line-strong);margin:0 8px;}
+  .deliv .items{display:flex;flex-wrap:wrap;gap:8px;margin:0;}
+  .deliv .items span:not(.sep){
+    display:inline-flex;align-items:center;
+    font-family:var(--mono);font-size:.72rem;line-height:1.35;color:var(--ink-soft);
+    border:1px solid var(--line);background:var(--paper-2);padding:6px 9px;border-radius:3px;
+  }
+  .deliv .items .sep{display:none;}
 
   /* role + chips */
-  .role{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:6px;}
+  .cap-panel{background:var(--accent-soft);border:1px solid var(--line-strong);padding:18px 20px 20px;margin:0 0 clamp(32px,5vw,44px);}
+  .role{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:8px;}
   .role .badge{
-    font-family:var(--mono);font-size:.76rem;letter-spacing:.04em;
-    background:var(--ink);color:#fff;padding:6px 12px;border-radius:2px;
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:1rem;font-weight:700;letter-spacing:-.01em;color:var(--ink);
   }
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;margin-bottom:clamp(6px,1.5vw,12px);}
+  .role .badge .ico{width:17px;height:17px;stroke:var(--accent);flex:0 0 auto;}
+  .pm-comment{margin:0 0 18px;max-width:86ch;color:var(--ink-soft);font-size:.93rem;line-height:1.72;}
+  .pm-label{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin-right:10px;
+    color:var(--accent);
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:-.01em;
+    white-space:nowrap;
+  }
+  .pm-label .ico{width:14px;height:14px;stroke:currentColor;flex:0 0 auto;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;margin-bottom:clamp(6px,1.5vw,12px);}
   .chip{
-    font-size:.8rem;color:var(--accent);
-    background:var(--accent-soft);
-    padding:5px 11px;border-radius:999px;letter-spacing:-.01em;
+    font-size:.78rem;color:var(--accent);
+    background:#fff;
+    border:1px solid rgba(10,122,69,.14);
+    padding:5px 10px;border-radius:999px;letter-spacing:-.01em;
   }
+  .cap-groups{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;}
+  .cap-group{background:rgba(255,255,255,.62);border:1px solid rgba(10,122,69,.12);padding:13px 14px 14px;}
+  .cap-label{margin:0 0 10px;font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .cap-group .chips{margin:0;}
 
   /* ---------- scroll cue ---------- */
   .scroll-cue{margin-top:clamp(48px,8vw,84px);display:flex;align-items:center;gap:14px;color:var(--muted);}
@@ -250,11 +280,11 @@
     color:#fff;
   }
   .band .statement .hl{color:var(--accent-bright);}
-  .band--lead{padding-bottom:clamp(44px,6vw,76px);}
-  .band--alt{background:var(--dark-2);border-top:1px solid var(--dark-line);padding-top:clamp(44px,6vw,76px);}
+  .band--lead{padding-top:clamp(76px,10vw,124px);padding-bottom:clamp(76px,10vw,124px);}
+  .band--alt{background:var(--dark-2);border-top:1px solid var(--dark-line);padding-top:clamp(76px,10vw,124px);padding-bottom:clamp(76px,10vw,124px);}
 
-  .dstats{margin-top:clamp(48px,7vw,80px);border-top:1px solid var(--dark-line);display:grid;grid-template-columns:repeat(4,1fr);}
-  .dstat{padding:26px 0 6px;border-right:1px solid var(--dark-line);}
+  .dstats{margin-top:clamp(44px,6vw,68px);border-top:1px solid var(--dark-line);display:grid;grid-template-columns:repeat(4,1fr);}
+  .dstat{padding:26px 0 6px 3pt;border-right:1px solid var(--dark-line);}
   .dstat:last-child{border-right:0;}
   .dstat .num{font-family:var(--mono);font-weight:500;font-size:clamp(1.9rem,3.8vw,2.9rem);letter-spacing:-.02em;color:var(--accent-bright);line-height:1;}
   .dstat .lab{display:block;margin-top:14px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-muted);}
@@ -269,15 +299,80 @@
   .foot{background:var(--dark);color:var(--on-dark);padding:40px 0 64px;}
   .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center;}
   .foot .note{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--on-dark-muted);line-height:1.8;}
+  .foot .mail{display:inline-flex;align-items:center;gap:7px;color:var(--on-dark-muted);transition:color .18s;}
+  .foot .mail:hover{color:var(--on-dark);}
+  .foot .mail .ico{width:14px;height:14px;stroke:var(--on-dark-muted);opacity:.85;flex:0 0 auto;transition:stroke .18s,opacity .18s;}
+  .foot .mail:hover .ico{stroke:var(--accent-bright);opacity:1;}
   .foot .top{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark);border:1px solid var(--dark-line);padding:9px 16px;border-radius:2px;transition:background .18s,border-color .18s,color .18s;}
   .foot .top:hover{background:var(--accent-bright);border-color:var(--accent-bright);color:var(--dark);}
 
   /* ---------- gallery (수행 현장) ---------- */
   .field-photos{margin-top:clamp(28px,4vw,40px);}
-  .gallery{display:flex;flex-wrap:wrap;gap:12px;margin:0;}
-  .gallery img{height:140px;width:auto;flex:0 0 auto;display:block;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,30,.08);}
-  @media (max-width:760px){ .gallery img{height:98px;border-radius:10px;} }
-  @media (max-width:430px){ .gallery img{height:82px;} }
+  .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;}
+  .gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,30,.08);}
+  @media (max-width:760px){ .gallery{grid-template-columns:repeat(2,minmax(0,1fr));} .gallery img{border-radius:10px;} }
+  @media (max-width:430px){ .gallery{grid-template-columns:1fr;} }
+
+  /* PM growth */
+  .growth{
+    padding:clamp(68px,9vw,108px) 0;
+    background:var(--paper-2);
+    border-top:1px solid var(--line);
+  }
+  .growth .intro{
+    margin:0 0 clamp(30px,4vw,46px);
+    max-width:78ch;
+    font-size:clamp(1.05rem,1.55vw,1.25rem);
+    line-height:1.78;
+    color:var(--ink-soft);
+    letter-spacing:-.01em;
+  }
+  .growth-path{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    border-top:1px solid var(--line-strong);
+    border-bottom:1px solid var(--line-strong);
+  }
+  .growth-step{
+    position:relative;
+    min-height:260px;
+    padding:26px 22px 30px;
+    border-right:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(235,246,239,.64), rgba(250,252,248,0));
+  }
+  .growth-step:last-child{border-right:0;}
+  .growth-step::before{
+    content:"";
+    position:absolute;
+    left:22px;
+    top:-1px;
+    width:48px;
+    height:3px;
+    background:var(--accent);
+  }
+  .growth-step .gx{
+    display:block;
+    margin-bottom:28px;
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.16em;
+    color:var(--accent);
+    font-weight:700;
+  }
+  .growth-step h3{
+    margin:0 0 14px;
+    font-size:clamp(1.08rem,1.6vw,1.28rem);
+    line-height:1.35;
+    color:var(--ink);
+    font-weight:800;
+    letter-spacing:-.02em;
+  }
+  .growth-step p{
+    margin:0;
+    font-size:.93rem;
+    line-height:1.72;
+    color:var(--ink-soft);
+  }
 
   /* ---------- project: badges / history / kpi (작업지시서 반영) ---------- */
   .badges{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 clamp(22px,3.5vw,30px);}
@@ -311,11 +406,18 @@
     .meta{grid-template-columns:repeat(2,1fr);}
     .results{grid-template-columns:1fr;}
     .idx-row{grid-template-columns:36px 1fr auto;gap:12px;}
+    .task-row{grid-template-columns:1fr;gap:6px;}
+    .cap-groups{grid-template-columns:1fr;}
+    .growth-path{grid-template-columns:1fr;}
+    .growth-step{min-height:0;border-right:0;border-bottom:1px solid var(--line);}
+    .growth-step:last-child{border-bottom:0;}
   }
   @media (max-width:430px){
     .topbar .cname,.topbar .cdiv{display:none;}
     .meta{grid-template-columns:1fr;}
     .pillars{grid-template-columns:1fr;}
+    .growth-step{padding:24px 18px 26px;}
+    .growth-step::before{left:18px;}
   }
 
   @media (prefers-reduced-motion:reduce){
@@ -330,7 +432,7 @@
     .topbar,.foot .top,.scroll-cue{display:none;}
     .reveal{opacity:1;transform:none;}
     .project{page-break-inside:avoid;}
-    .band,.foot{background:#fff;color:#000;}
+    .band,.growth,.foot{background:#fff;color:#000;}
     .band .statement,.band .statement .hl,.dstat .num,.pillar .pt{color:#000;}
     .band .eyebrow,.dstat .lab,.pillar .pd,.foot .note{color:#444;}
     .dstats,.dstat,.pillars,.pillar,.foot{border-color:#ccc !important;}
@@ -358,8 +460,8 @@
   <section class="hero">
     <div class="wrap">
       <p class="eyebrow"><span class="accent">AI · DATA · AX EDUCATION</span> &nbsp;·&nbsp; PROJECT RECORD</p>
-      <h1>AI·데이터 교육사업<br>운영 포트폴리오</h1>
-      <p class="lede">공공기관과 기업의 AI·데이터·AX 교육사업을 기획·운영하고, 교육·프로젝트·공모전·성과확산까지 수행한 2022–2025년 프로젝트 기록입니다.</p>
+      <h1>AI·데이터 교육사업<br>기획·운영 포트폴리오</h1>
+      <p class="lede">공공기관·기업 대상 AI·데이터 교육사업의 제안, 과정기획, 운영관리, 성과보고까지 수행한<br>교육사업 PM 경력 포트폴리오입니다.</p>
       <div class="scroll-cue" aria-hidden="true">
         <span class="lbl">Scroll to explore</span>
         <span class="track"></span>
@@ -370,8 +472,8 @@
   <!-- DARK BAND 1 : statement + aggregate stats -->
   <section class="band band--lead">
     <div class="wrap">
-      <p class="eyebrow reveal">Cumulative · 누적 성과</p>
-      <p class="statement reveal">기획부터 교육운영·프로젝트·성과확산까지,<br><span class="hl">교육사업의 전 과정</span>을 운영합니다.</p>
+      <p class="eyebrow reveal">CUMULATIVE · 누적 성과</p>
+      <p class="statement reveal">숫자로 확인하는 <span class="hl">교육사업 수행 기록</span></p>
       <div class="dstats reveal">
         <div class="dstat"><span class="num">07</span><span class="lab">대표 교육사업</span></div>
         <div class="dstat"><span class="num">5,000+</span><span class="lab">누적 교육 참여·수료 (명)</span></div>
@@ -384,13 +486,13 @@
   <!-- DARK BAND 2 : capability pillars -->
   <section class="band band--alt">
     <div class="wrap">
-      <p class="eyebrow reveal">Capabilities · 핵심 역량</p>
-      <p class="statement reveal">운영을 완성하는 <span class="hl">네 가지 축</span>.</p>
+      <p class="eyebrow reveal">CAPABILITIES · 핵심 역량</p>
+      <p class="statement reveal">성과를 만드는 <span class="hl">네 가지 실행역량</span></p>
       <div class="pillars reveal">
-        <div class="pillar"><p class="pt">교육 기획·운영</p><p class="pd">과정 기획부터 회차 운영, LMS, 장기 프로젝트형 교육, 성과공유회까지 다양한 형태의 교육사업을 설계하고 운영합니다.</p></div>
-        <div class="pillar"><p class="pt">AI·데이터 주제 역량</p><p class="pd">Python·QGIS·머신러닝부터 생성형 AI, LLM, RAG, AI Agent까지 최신 주제를 실무 교육과정으로 전환합니다.</p></div>
-        <div class="pillar"><p class="pt">성과·문서 완결성</p><p class="pd">착수·중간·최종보고와 만족도·역량평가·수료관리까지, 운영 성과를 문서와 지표로 증명합니다.</p></div>
-        <div class="pillar"><p class="pt">이해관계자 조율</p><p class="pd">발주기관, 강사, 멘토, 교육생, 협력기관을 연결하며 교육운영 품질과 성과확산을 관리합니다.</p></div>
+        <div class="pillar"><p class="pt">교육사업 설계·운영</p><p class="pd">RFP와 기관 요구를 분석해 교육과정, 운영계획, 일정·인력·산출물 체계로 구체화합니다.</p></div>
+        <div class="pillar"><p class="pt">AI·데이터 과정화</p><p class="pd">Python·QGIS·머신러닝부터 생성형 AI, LLM, RAG, AI Agent까지 실무형 교육 주제로 전환합니다.</p></div>
+        <div class="pillar"><p class="pt">성과관리·보고</p><p class="pd">수료율, 만족도, 역량평가, 프로젝트 결과를 지표로 관리하고 보고서로 완결합니다.</p></div>
+        <div class="pillar"><p class="pt">이해관계자 조율</p><p class="pd">발주기관, 강사, 멘토, 교육생, 협력기관과의 커뮤니케이션을 통해 교육 운영 품질을 관리합니다.</p></div>
       </div>
     </div>
   </section>
@@ -401,37 +503,37 @@
       <div class="idx-list">
         <a class="idx-row" href="#p01">
           <span class="ix">01</span>
-          <span class="meat"><span class="ti">환경 데이터리더 양성사업</span><span class="cl"> · 한국환경공단 · 사업실무책임</span></span>
+          <span class="meat"><span class="ti">경찰청 빅데이터 교육 / AI·데이터 역량 강화교육</span><span class="cl"> · 경찰청 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p02">
           <span class="ix">02</span>
-          <span class="meat"><span class="ti">재정데이터 분석교육 운영·고도화 포트폴리오</span><span class="cl"> · 한국재정정보원 · 사업실무책임</span></span>
+          <span class="meat"><span class="ti">AI·빅데이터 전문가 양성 과정 운영 위탁</span><span class="cl"> · 한국철도공사 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p03">
           <span class="ix">03</span>
-          <span class="meat"><span class="ti">경찰청 AI·데이터 교육사업 포트폴리오</span><span class="cl"> · 경찰청 · 교육운영 PM</span></span>
+          <span class="meat"><span class="ti">재정데이터 분석 교육 사업</span><span class="cl"> · 한국재정정보원 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p04">
           <span class="ix">04</span>
-          <span class="meat"><span class="ti">한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오</span><span class="cl"> · 한국철도공사 · 사업실무책임</span></span>
+          <span class="meat"><span class="ti">환경데이터 리더 양성</span><span class="cl"> · 한국환경공단 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p05">
           <span class="ix">05</span>
-          <span class="meat"><span class="ti">KT IT 직무 분석·설계 역량강화 교육</span><span class="cl"> · KT · 기업 IT 직무교육 운영관리</span></span>
+          <span class="meat"><span class="ti">IT 직무대상 역량강화를 위한 분석·설계 교육 프로그램</span><span class="cl"> · KT · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p06">
           <span class="ix">06</span>
-          <span class="meat"><span class="ti">NIPA 산업전문인력 AI역량강화 · 제조분야</span><span class="cl"> · NIPA 정보통신산업진흥원 · 참여기관 교육수행</span></span>
+          <span class="meat"><span class="ti">도심 제조업 디지털 전환 촉진을 위한 AI 산업인력 역량 강화</span><span class="cl"> · NIPA·서울테크노파크 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p07">
           <span class="ix">07</span>
-          <span class="meat"><span class="ti">NIPA 산업전문인력 AI역량강화 · 교육분야</span><span class="cl"> · 한국에듀테크산업협회 · 참여기관 교육수행</span></span>
+          <span class="meat"><span class="ti">교육산업 AI 융합 전문인력 역량 강화 사업</span><span class="cl"> · NIPA·한국에듀테크산업협회 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
       </div>
@@ -443,108 +545,46 @@
     <div class="wrap">
 
       <article class="project reveal" id="p01">
-        <p class="p-tag"><b>01</b> &nbsp;/&nbsp; 한국환경공단 · 2025.05 — 12</p>
-        <h2>2025년 환경 데이터리더 양성사업</h2>
-        <p class="summary">AI·데이터 교육, 분석동아리, 공모전, 성과공유대회, 역량진단, 콘텐츠 제작을 하나의 흐름으로 통합 운영한 환경분야 데이터 활용 역량강화 종합사업.</p>
+        <p class="p-tag"><b>01</b> &nbsp;/&nbsp; 경찰청 · 2023 — 2025</p>
+        <h2>경찰청 빅데이터 교육 / AI·데이터 역량 강화교육</h2>
+        <p class="summary">2023–2025년 연차별 개별 제안·수주<br>경찰청 맞춤형 빅데이터·AI·데이터 교육<br>데이터 분석 중심 교육에서 생성형 AI·RAG·AI Agent 주제로 고도화</p>
         <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>발주처</dt><dd>한국환경공단</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>사업기간</dt><dd>2025.05.27 ~ 2025.12.12</dd></div><div><dt>사업예산</dt><dd>232백만원</dd></div><div><dt>교육대상</dt><dd>기후에너지환경부 및 소속·산하기관 직원</dd></div><div><dt>사업유형</dt><dd>AI·데이터 교육 / 분석동아리 / 공모전 / 성과확산</dd></div></dl>
-        <p class="block-label">핵심 성과</p>
-        <div class="results">
-          <div class="result"><p class="rs"><b class="m">9개</b> 과정·<b class="m">13회</b>·총 <b class="m">116시간</b>의 AI·데이터 교육을 운영하고 온·오프라인 총 <b class="m">884명</b>의 참여를 관리했습니다.</p></div>
-          <div class="result"><p class="rs">AI리더 <b class="m">5팀</b>, 환경데이터 <b class="m">5팀</b> 등 총 <b class="m">10개</b> 분석동아리를 운영하고 멘토링을 연계했습니다.</p></div>
-          <div class="result"><p class="rs">환경데이터 분석·활용 공모전에서 <b class="m">25개</b> 과제를 접수하고 <b class="m">16개</b> 과제 발표평가를 운영했습니다.</p></div>
-          <div class="result"><p class="rs">성과공유대회, 역량진단, 우수사례 콘텐츠북, 성과영상 제작까지 성과확산 체계를 운영했습니다.</p></div>
-        </div>
-        <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>AI·데이터 역량강화 교육과정 기획 및 운영</li><li>AI리더·환경데이터 분석동아리 운영 및 멘토 연계</li><li>환경데이터 분석·활용 공모전 접수·심사·발표평가·수상 운영</li><li>성과공유대회 기획·운영 및 교육성과 확산</li><li>기관별 AI·데이터 활용 역량진단 및 강화방안 도출</li><li>성과영상 및 우수 분석·활용 사례 콘텐츠 제작 관리</li></ul>
-        <div class="deliv">
-          <p class="block-label">산출물 · 행정 문서</p>
-          <div class="items"><span>착수보고서</span><span class="sep">·</span><span>중간보고서</span><span class="sep">·</span><span>최종보고서</span><span class="sep">·</span><span>교육 운영 결과보고서</span><span class="sep">·</span><span>분석동아리 결과보고서</span><span class="sep">·</span><span>공모전 운영 결과보고서</span><span class="sep">·</span><span>성과공유대회 결과보고서</span><span class="sep">·</span><span>역량진단 결과보고서</span><span class="sep">·</span><span>우수사례 콘텐츠북</span><span class="sep">·</span><span>성과영상</span><span class="sep">·</span><span>최종보고 발표자료</span></div>
-        </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">사업실무책임 / 실무 운영 PM</span></div>
-        <div class="chips"><span class="chip">교육과정기획</span><span class="chip">프로젝트형교육운영</span><span class="chip">강사·멘토조율</span><span class="chip">교육생관리</span><span class="chip">분석동아리운영</span><span class="chip">공모전운영</span><span class="chip">성과공유운영</span><span class="chip">결과보고</span><span class="chip">AX교육기획</span><span class="chip">이해관계자조율</span></div>
-        <div class="field-photos">
-          <p class="block-label">수행 현장</p>
-          <div class="gallery reveal">
-            <img src="images/env-1.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 1" loading="lazy">
-            <img src="images/env-2.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 2" loading="lazy">
-            <img src="images/env-3.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 3" loading="lazy">
-            <img src="images/env-4.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 4" loading="lazy">
-            <img src="images/env-5.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 5" loading="lazy">
-            <img src="images/env-6.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 6" loading="lazy">
-          </div>
-        </div>
-      </article>
-
-      <article class="project reveal" id="p02">
-        <p class="p-tag"><b>02</b> &nbsp;/&nbsp; 한국재정정보원 · 2024 — 2025</p>
-        <h2>한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오</h2>
-        <p class="summary">2024년 LMS 기반 교육체계 구축부터 2025년 연중 재정데이터 분석교육 운영·콘텐츠 개발·분석사례 확산까지, 매년 별도 제안·수주를 통해 수행한 공공 데이터교육 운영 포트폴리오.</p>
-        <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>발주처</dt><dd>한국재정정보원</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행기간</dt><dd>2024–2025</dd></div><div><dt>수행방식</dt><dd>연차별 개별 제안·수주</dd></div><div><dt>사업유형</dt><dd>재정데이터 분석교육 / LMS 운영 / 온라인 콘텐츠 / 분석사례 개발</dd></div></dl>
+        <dl class="meta"><div><dt>발주처</dt><dd>경찰청</dd></div><div><dt>수행기간</dt><dd>2023.07–2025.12</dd></div><div><dt>사업예산</dt><dd>2023년 100백만원<br>2024년 100백만원<br>2025년 95백만원</dd></div><div><dt>수행기관</dt><dd>(주)씨에스리</dd></div></dl>
         <p class="block-label">연차별 수행 이력</p>
         <div class="history">
-          <div class="hist"><div class="hy"><span class="yr2">2024년</span>재정데이터 분석 교육 및 유지관리 통합 사업</div><ul class="hist-list"><li>LMS 신규 도입 및 온라인 교육시스템을 개설했습니다.</li><li>대면 실습과정 <b class="m">52회</b>, <b class="m">111일</b>, <b class="m">700시간</b>을 운영했습니다.</li><li>신청인원 <b class="m">1,129명</b>을 관리하고 온라인 <b class="m">6개</b> 과정을 운영했습니다.</li><li>재정데이터 분석 미니프로젝트 <b class="m">2회</b>를 운영했습니다.</li><li>대면·온라인 통합 교육체계를 구축했습니다.</li></ul></div>
-          <div class="hist"><div class="hy"><span class="yr2">2025년</span>재정데이터 분석 교육 사업</div><ul class="hist-list"><li>대면 실습과정 <b class="m">70회</b>, <b class="m">154일</b>, <b class="m">984시간</b>을 운영했습니다.</li><li>신청인원 <b class="m">1,393명</b>을 관리했습니다.</li><li>온라인 <b class="m">13개</b> 과정과 온라인 수강신청 <b class="m">2,170건</b>을 관리했습니다.</li><li>신규 온라인 콘텐츠 <b class="m">7개</b>와 재정데이터 분석사례 <b class="m">10건</b>을 개발했습니다.</li><li>주간·월간·완료보고 체계를 통해 연중 운영성과를 관리했습니다.</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2023년</span>경찰청 빅데이터 교육 용역사업</div><ul class="hist-list"><li>Python·QGIS·노코드 분석·머신러닝·텍스트마이닝 중심 교육 운영</li><li>온라인 교육·시도청 분석교육·오프라인 교육과정 병행 운영</li><li>경찰청 데이터 기반 업무역량 강화 교육체계 기반 구축</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2024년</span>경찰청 빅데이터 교육 용역사업</div><ul class="hist-list"><li>시도청 분석교육 <b class="m">7개소</b> 운영</li><li>인력풀 맞춤교육 추가 운영</li><li>ChatGPT 활용 데이터 분석 주제 반영</li><li>전년도 교육경험 기반 대상·운영방식 확대</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2025년</span>경찰청 AI·데이터 역량 강화교육</div><ul class="hist-list"><li>총 <b class="m">217시간</b>·<b class="m">182명</b> 대상 교육 운영</li><li>시도청 분석교육 <b class="m">7회</b> 및 인재개발원 기본·심화 과정 운영</li><li>인력풀 보수교육 운영</li><li>LLM·RAG·Fine-tuning·AI Agent·Vector DB 등 최신 AI 주제 반영</li></ul></div>
         </div>
         <p class="block-label">핵심 성과</p>
         <div class="results">
-          <div class="result"><p class="rs">2024년 LMS 기반 재정데이터 분석교육 체계를 신규 구축하고 대면·온라인 통합 운영 기반을 마련했습니다.</p></div>
-          <div class="result"><p class="rs">2025년 대면 <b class="m">70회</b>·<b class="m">984시간</b>, 온라인 <b class="m">13개</b> 과정으로 연중 교육운영을 확대했습니다.</p></div>
-          <div class="result"><p class="rs">신규 온라인 콘텐츠 <b class="m">7개</b> 및 재정데이터 분석사례 <b class="m">10건</b> 개발로 교육자산을 고도화했습니다.</p></div>
-          <div class="result"><p class="rs">주간·월간·완료보고 체계를 통해 연중 운영성과를 정기적으로 관리·문서화했습니다.</p></div>
+          <div class="result"><p class="rt">3개년 연차별 개별 수주 · 295백만원</p><p class="rd">2023 100백만원 · 2024 100백만원 · 2025 95백만원</p></div>
+          <div class="result"><p class="rt">빅데이터 교육에서 AI·데이터 교육으로 고도화</p><p class="rd">Python·QGIS·머신러닝 중심 교육 → 생성형 AI·RAG·AI Agent 주제 확장</p></div>
+          <div class="result"><p class="rt">경찰청 대상별 교육체계 운영</p><p class="rd">시도청 분석교육 · 인재개발원 기본·심화 과정 · 인력풀 맞춤·보수교육</p></div>
+          <div class="result"><p class="rt">2025년 217시간 · 182명 교육 운영</p><p class="rd">공공기관 실무자 대상 AI·데이터 역량강화 교육 운영성과 확보</p></div>
         </div>
         <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>입문·심화·특강·미니프로젝트 등 수준·목적별 교육과정 운영</li><li>Python·Brightics AI·QGIS·ChatGPT 등 실습형 데이터 분석 교육 운영</li><li>LMS 기반 온라인 교육과정 운영 및 수강현황 관리</li><li>재정데이터 분석사례 개발 및 교육과정 연계</li><li>만족도·사전사후 역량평가·수료현황 관리</li><li>주간·월간·완료보고를 통한 연중 운영성과 문서화</li></ul>
-        <div class="deliv">
-          <p class="block-label">산출물 · 행정 문서</p>
-          <div class="items"><span>사업수행계획서</span><span class="sep">·</span><span>착수보고서</span><span class="sep">·</span><span>주간 운영보고서</span><span class="sep">·</span><span>월간 운영보고서</span><span class="sep">·</span><span>과정별 결과보고서</span><span class="sep">·</span><span>만족도 결과보고서</span><span class="sep">·</span><span>역량평가 결과보고서</span><span class="sep">·</span><span>LMS·온라인 운영 결과보고서</span><span class="sep">·</span><span>재정데이터 분석사례집</span><span class="sep">·</span><span>사업수행결과서</span><span class="sep">·</span><span>출결·수료 관리자료</span></div>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">교육과정 기획·구성</p><p class="td">경찰청 업무환경 및 교육대상별 요구를 반영한 빅데이터·AI·데이터 교육과정 구성</p></div>
+          <div class="task-row"><p class="tt">대상별 교육 운영</p><p class="td">시도청 분석교육, 인재개발원 과정, 인력풀 교육 등 대상별 운영방식 분리 적용</p></div>
+          <div class="task-row"><p class="tt">실습환경 점검</p><p class="td">Python·QGIS·노코드 분석·생성형 AI 실습을 위한 교육환경 및 도구 사전 점검</p></div>
+          <div class="task-row"><p class="tt">강사·교육생 관리</p><p class="td">과정별 강사 일정 조율, 교육생 안내, 출결·수료 기준 관리</p></div>
+          <div class="task-row"><p class="tt">성과관리</p><p class="td">만족도·역량평가·수료현황·교육결과 취합 및 과정별 결과보고 반영</p></div>
+          <div class="task-row"><p class="tt">홍보·보고자료 관리</p><p class="td">교육 안내자료, 홍보 포스터, 카드뉴스, 결과보고 등 공공기관 제출자료 관리</p></div>
         </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">사업실무책임 / 연중 교육운영 PM</span></div>
-        <div class="chips"><span class="chip">연중교육운영</span><span class="chip">대규모교육운영</span><span class="chip">LMS운영관리</span><span class="chip">교육생관리</span><span class="chip">강사관리</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">정기보고</span><span class="chip">공공기관교육행정</span><span class="chip">데이터분석교육운영</span><span class="chip">문서행정완결성</span></div>
-        <div class="field-photos">
-          <p class="block-label">수행 현장</p>
-          <div class="gallery reveal">
-            <img src="images/kpfis-1.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 1" loading="lazy">
-            <img src="images/kpfis-2.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 2" loading="lazy">
-            <img src="images/kpfis-3.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 3" loading="lazy">
-            <img src="images/kpfis-4.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 4" loading="lazy">
-            <img src="images/kpfis-5.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 5" loading="lazy">
-            <img src="images/kpfis-6.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 6" loading="lazy">
-          </div>
-        </div>
-      </article>
-
-      <article class="project reveal" id="p03">
-        <p class="p-tag"><b>03</b> &nbsp;/&nbsp; 경찰청 · 2023 — 2025</p>
-        <h2>경찰청 AI·데이터 교육사업 포트폴리오</h2>
-        <p class="summary">2023~2025년 매년 별도 제안·수주를 통해 수행한 경찰청 맞춤형 빅데이터·AI·데이터 교육사업. 데이터 분석 교육에서 생성형 AI, RAG, AI Agent 등 최신 AI 주제로 고도화된 공공기관 교육 포트폴리오.</p>
-        <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>발주처</dt><dd>경찰청</dd></div><div><dt>수행기간</dt><dd>2023–2025</dd></div><div><dt>수행방식</dt><dd>연차별 개별 제안·수주</dd></div><div><dt>수행조직</dt><dd>㈜씨에스리 수행조직</dd></div><div><dt>사업유형</dt><dd>공공기관 AI·데이터 교육 / 시·도청 분석교육 / 인력풀 교육</dd></div></dl>
-        <p class="block-label">연차별 수행 이력</p>
-        <div class="history">
-          <div class="hist"><div class="hy"><span class="yr2">2023년</span>경찰청 빅데이터 교육 용역사업</div><ul class="hist-list"><li>Python, QGIS, 노코드 분석, 머신러닝, 텍스트마이닝 중심 교육을 운영했습니다.</li><li>온라인 교육, 시·도청 분석교육, 오프라인 교육과정을 운영했습니다.</li><li>경찰청 데이터 기반 업무 역량강화 교육의 기반을 구축했습니다.</li></ul></div>
-          <div class="hist"><div class="hy"><span class="yr2">2024년</span>경찰청 빅데이터 교육 용역사업</div><ul class="hist-list"><li>시·도청 분석교육 <b class="m">7개소</b>를 운영했습니다.</li><li>인력풀 맞춤교육을 추가하여 교육대상을 확장했습니다.</li><li>ChatGPT 활용 데이터 분석 주제를 반영했습니다.</li><li>전년도 교육경험을 기반으로 대상과 운영 방식을 확대했습니다.</li></ul></div>
-          <div class="hist"><div class="hy"><span class="yr2">2025년</span>경찰청 AI·데이터 역량 강화교육</div><ul class="hist-list"><li>총 <b class="m">217시간</b>, <b class="m">182명</b> 대상 교육을 운영했습니다.</li><li>시·도청 분석교육 <b class="m">7회</b> 및 인재개발원 기본·심화 과정을 운영했습니다.</li><li>인력풀 보수교육을 운영했습니다.</li><li>LLM, RAG, Fine-tuning, AI Agent, Vector DB 등 최신 AI 주제를 반영했습니다.</li></ul></div>
-        </div>
-        <p class="block-label">핵심 성과</p>
-        <div class="results">
-          <div class="result"><p class="rs">2023~2025년 매년 별도 제안·수주를 통해 경찰청 AI·데이터 교육사업을 연차별로 고도화했습니다.</p></div>
-          <div class="result"><p class="rs">데이터 분석 중심 교육에서 생성형 AI·RAG·AI Agent 기반 최신 AI 교육으로 주제를 확장했습니다.</p></div>
-          <div class="result"><p class="rs">시·도청 분석교육, 인재개발원 기본·심화과정, 인력풀 보수교육 등 대상별 교육체계를 운영했습니다.</p></div>
-          <div class="result"><p class="rs">과정별 만족도·역량평가·결과보고·홍보자료까지 공공기관 교육성과를 관리했습니다.</p></div>
-        </div>
-        <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>경찰청 맞춤형 AI·데이터 교육과정 운영</li><li>시·도청 분석교육 및 인재개발원 과정 운영</li><li>인력풀 보수교육 운영 및 최신 AI 주제 반영</li><li>Python·QGIS·머신러닝·생성형 AI 실습환경 점검</li><li>교육생 모집 안내·홍보 포스터·카드뉴스 등 자료 관리</li><li>만족도·역량평가 관리 및 결과보고 반영</li></ul>
         <div class="deliv">
           <p class="block-label">산출물 · 행정 문서</p>
           <div class="items"><span>교육 운영계획서</span><span class="sep">·</span><span>과정별 결과보고서</span><span class="sep">·</span><span>모집 안내문</span><span class="sep">·</span><span>홍보 포스터</span><span class="sep">·</span><span>성과 홍보 카드뉴스</span><span class="sep">·</span><span>만족도 결과보고서</span><span class="sep">·</span><span>역량평가 결과보고서</span><span class="sep">·</span><span>시·도청 분석교육 결과보고서</span><span class="sep">·</span><span>인력풀 보수교육 결과보고서</span><span class="sep">·</span><span>최종 결과보고서</span><span class="sep">·</span><span>운영 개선방향 보고자료</span></div>
         </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">교육운영 PM / 공공기관 AI·데이터 교육 운영</span></div>
-        <div class="chips"><span class="chip">공공기관교육운영</span><span class="chip">AI데이터교육운영</span><span class="chip">과정별운영관리</span><span class="chip">교육생관리</span><span class="chip">강사커뮤니케이션</span><span class="chip">실습환경점검</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">결과보고</span><span class="chip">AI교육주제이해</span><span class="chip">실무형교육운영</span></div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>연차별 교육 경험을 다음 해 과정 설계에 반영하면서, 공공기관 AI·데이터 교육은 기술 주제보다 기관 업무맥락과 교육대상 구분이 먼저 정리되어야 한다는 점을 확인한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">연차별 교육운영</span><span class="chip">시도청 분석교육 운영</span><span class="chip">인재개발원 과정 운영</span><span class="chip">인력풀 교육관리</span><span class="chip">실습환경 점검</span><span class="chip">만족도·역량평가 관리</span><span class="chip">결과보고</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">공공기관 교육운영</span><span class="chip">AI·데이터 교육 주제 이해</span><span class="chip">대상별 과정 운영</span><span class="chip">교육생·강사 커뮤니케이션</span><span class="chip">성과자료 문서화</span></div></div>
+        </div>
+        </div>
         <div class="field-photos">
           <p class="block-label">수행 현장</p>
           <div class="gallery reveal">
@@ -558,33 +598,46 @@
         </div>
       </article>
 
-      <article class="project reveal" id="p04">
-        <p class="p-tag"><b>04</b> &nbsp;/&nbsp; 한국철도공사 · 2024 — 2025</p>
-        <h2>한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오</h2>
-        <p class="summary">2024~2025년 매년 별도 제안·수주를 통해 수행한 철도 현업문제 해결형 AI·빅데이터 프로젝트 교육사업. Track 기반 분석교육에서 LLM·RAG·Streamlit 기반 AI서비스 구현형 교육으로 고도화했습니다.</p>
+      <article class="project reveal" id="p02">
+        <p class="p-tag"><b>02</b> &nbsp;/&nbsp; 한국철도공사 · 2024 — 2025</p>
+        <h2>AI·빅데이터 전문가 양성 과정 운영 위탁</h2>
+        <p class="summary">2024–2025년 연차별 개별 제안·수주<br>한국철도공사 현업문제 해결형 AI·빅데이터 프로젝트 교육<br>Track 기반 분석교육에서 AI서비스 구현형 교육으로 고도화</p>
         <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>발주처</dt><dd>한국철도공사</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행기간</dt><dd>2024–2025</dd></div><div><dt>수행방식</dt><dd>연차별 개별 제안·수주</dd></div><div><dt>사업유형</dt><dd>현업문제 해결형 AI·빅데이터 프로젝트 교육</dd></div></dl>
+        <dl class="meta"><div><dt>발주처</dt><dd>한국철도공사</dd></div><div><dt>수행기간</dt><dd>2024.07–2025.12</dd></div><div><dt>사업예산</dt><dd>2024년 185백만원<br>2025년 93.7백만원</dd></div><div><dt>수행기관</dt><dd>(주)씨에스리</dd></div></dl>
         <p class="block-label">연차별 수행 이력</p>
         <div class="history">
-          <div class="hist"><div class="hy"><span class="yr2">2024년</span>AI·빅데이터 전문가 양성과정 운영 위탁</div><ul class="hist-list"><li><b class="m">49명</b> 대상 장기 교육을 운영했습니다.</li><li>총 <b class="m">228시간</b> 과정으로 운영했습니다.</li><li>빅데이터분석 Track <b class="m">29명</b>, AI모델개발 Track <b class="m">20명</b>으로 분반 운영했습니다.</li><li>철도 현업문제 기반 <b class="m">11개</b> 팀 프로젝트를 수행했습니다.</li><li>사전역량평가 기반 분반 및 프로젝트 수행을 관리했습니다.</li></ul></div>
-          <div class="hist"><div class="hy"><span class="yr2">2025년</span>AI·빅데이터 전문가 양성과정 운영 위탁</div><ul class="hist-list"><li><b class="m">27명</b> 대상 장기 교육을 운영했습니다.</li><li><b class="m">7개</b> 팀 프로젝트를 수행했습니다.</li><li>AI서비스 기획·개발·검증·확산 흐름으로 과정을 재설계했습니다.</li><li>LLM, RAG, NLP, Streamlit, API, 서비스 UI 구현 등 주제를 반영했습니다.</li><li>철도 현업문제를 AI서비스 프로토타입 과제로 전환했습니다.</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2024년</span>AI·빅데이터 전문가 양성과정 운영 위탁</div><ul class="hist-list"><li><b class="m">49명</b> 대상 장기 교육 운영</li><li>총 <b class="m">228시간</b> 과정 운영</li><li>빅데이터분석 Track <b class="m">29명</b> · AI모델개발 Track <b class="m">20명</b> 분반 운영</li><li>철도 현업문제 기반 <b class="m">11개</b> 팀 프로젝트 수행</li><li>사전역량평가 기반 분반·프로젝트 수행관리</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2025년</span>AI·빅데이터 전문가 양성과정 운영 위탁</div><ul class="hist-list"><li><b class="m">27명</b> 대상 장기 교육 운영</li><li><b class="m">7개</b> 팀 프로젝트 수행</li><li>AI서비스 기획·개발·검증·확산 흐름으로 과정 재설계</li><li>LLM·RAG·NLP·Streamlit·API·서비스 UI 구현 주제 반영</li><li>철도 현업문제의 AI서비스 프로토타입 과제 전환</li></ul></div>
         </div>
         <p class="block-label">핵심 성과</p>
         <div class="results">
-          <div class="result"><p class="rs">2024~2025년 철도 현업문제 해결형 AI·빅데이터 프로젝트 교육을 연차별로 수행했습니다.</p></div>
-          <div class="result"><p class="rs">2024년 <b class="m">49명</b>·<b class="m">228시간</b>·<b class="m">11개</b> 팀 프로젝트 운영으로 Track 기반 전문가 양성과정을 구축했습니다.</p></div>
-          <div class="result"><p class="rs">2025년 <b class="m">27명</b>·<b class="m">7개</b> 팀 프로젝트 운영, LLM·RAG·Streamlit 기반 AI서비스 구현형 과정으로 고도화했습니다.</p></div>
-          <div class="result"><p class="rs">사전교육, 기획워크숍, 멘토링, 중간발표, 성과발표회까지 장기 프로젝트형 교육 운영체계를 관리했습니다.</p></div>
+          <div class="result"><p class="rt">2개년 개별 수주 · 278.7백만원</p><p class="rd">2024 185백만원 · 2025 93.7백만원</p></div>
+          <div class="result"><p class="rt">2024년 49명 · 228시간 · 11개 팀</p><p class="rd">Track 기반 AI·빅데이터 전문가 양성과정 구축</p></div>
+          <div class="result"><p class="rt">2025년 27명 · 7개 팀 · AI서비스 구현형 전환</p><p class="rd">LLM·RAG·Streamlit 기반 서비스 프로토타입 교육으로 고도화</p></div>
+          <div class="result"><p class="rt">18개 팀 프로젝트 성과관리</p><p class="rd">현업문제 발굴 → 프로젝트 수행 → 중간점검 → 성과발표 운영체계 관리</p></div>
         </div>
         <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>온라인 사전교육 및 현업 문제 발굴 기획워크숍 운영</li><li>AI·빅데이터 기본·심화·응용 과정 운영</li><li>팀 프로젝트 주제 구체화 및 전문가 멘토링 연계</li><li>중간발표·성과발표회 운영으로 교육성과 가시화</li><li>착수·중간·완료 단계별 운영현황 및 결과 문서화</li></ul>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">교육체계 설계</p><p class="td">사전 온라인교육 → 기획워크숍 → 기술교육 → 프로젝트 → 성과발표 흐름 구성</p></div>
+          <div class="task-row"><p class="tt">Track 기반 분반 운영</p><p class="td">사전역량평가 기반 빅데이터분석 Track · AI모델개발 Track 분반 운영</p></div>
+          <div class="task-row"><p class="tt">현업문제 과제화</p><p class="td">철도 현안 기반 팀 프로젝트 주제 구체화 및 데이터·AI 적용 방향 정리</p></div>
+          <div class="task-row"><p class="tt">전문가 멘토링 연계</p><p class="td">강사·멘토 배정, 팀별 프로젝트 피드백, 중간점검 운영</p></div>
+          <div class="task-row"><p class="tt">AI서비스 구현 지원</p><p class="td">LLM·RAG·NLP·Streamlit·API·UI 구현 실습환경 및 산출물 관리</p></div>
+          <div class="task-row"><p class="tt">성과발표 운영</p><p class="td">중간발표·최종성과발표·결과보고 자료 취합 및 운영현황 문서화</p></div>
+        </div>
         <div class="deliv">
           <p class="block-label">산출물 · 행정 문서</p>
           <div class="items"><span>교육과정 개발보고서</span><span class="sep">·</span><span>교육 운영계획서</span><span class="sep">·</span><span>착수·중간·완료보고서</span><span class="sep">·</span><span>사전 역량진단 결과보고서</span><span class="sep">·</span><span>온라인 사전교육 운영보고서</span><span class="sep">·</span><span>기획워크숍 결과보고서</span><span class="sep">·</span><span>팀 프로젝트 멘토링 운영보고서</span><span class="sep">·</span><span>중간발표회 결과보고서</span><span class="sep">·</span><span>성과발표회 결과보고서</span><span class="sep">·</span><span>팀별 프로젝트 결과보고서</span><span class="sep">·</span><span>최종 결과보고서</span></div>
         </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">사업실무책임 / 장기 프로젝트형 교육 PM</span></div>
-        <div class="chips"><span class="chip">교육과정기획</span><span class="chip">장기과정운영</span><span class="chip">프로젝트형교육운영</span><span class="chip">강사·멘토조율</span><span class="chip">교육생관리</span><span class="chip">팀프로젝트관리</span><span class="chip">중간발표운영</span><span class="chip">성과발표회운영</span><span class="chip">현업문제기반교육설계</span><span class="chip">성과가시화</span></div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>철도 현업문제를 교육용 프로젝트로 전환하면서, AI·빅데이터 교육의 성과는 교육 수료에 그치지 않고 실제 업무문제를 과제화하고 산출물로 연결하는 데서 만들어진다는 점을 체감한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">장기과정 운영</span><span class="chip">Track 분반 운영</span><span class="chip">현업문제 과제화</span><span class="chip">팀 프로젝트 관리</span><span class="chip">전문가 멘토링 연계</span><span class="chip">중간·최종발표 운영</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">AI·빅데이터 과정 설계</span><span class="chip">프로젝트형 교육운영</span><span class="chip">사전역량평가 활용</span><span class="chip">LLM·RAG 실습 이해</span><span class="chip">성과발표 운영관리</span></div></div>
+        </div>
+        </div>
         <div class="field-photos">
           <p class="block-label">수행 현장</p>
           <div class="gallery reveal">
@@ -598,28 +651,143 @@
         </div>
       </article>
 
-      <article class="project reveal" id="p05">
-        <p class="p-tag"><b>05</b> &nbsp;/&nbsp; KT · 2025.01 — 08</p>
-        <h2>KT IT 직무 분석·설계 역량강화 교육</h2>
-        <p class="summary">KT IT 직무자를 대상으로 데이터모델링, 프로세스모델링, 시나리오기반 실습을 반복 운영하고, 사전·사후 역량평가와 만족도 분석으로 교육효과를 관리한 B2B 기업 직무교육 프로젝트.</p>
+      <article class="project reveal" id="p03">
+        <p class="p-tag"><b>03</b> &nbsp;/&nbsp; 한국재정정보원 · 2024 — 2025</p>
+        <h2>재정데이터 분석 교육 사업</h2>
+        <p class="summary">2024–2025년 연차별 개별 제안·수주<br>재정데이터 분석교육 및 온라인 교육체계 운영<br>LMS 구축에서 연중 교육운영·콘텐츠 개발·분석사례 확산으로 고도화</p>
         <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>발주처</dt><dd>KT</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>사업기간</dt><dd>2025.01.20 ~ 2025.08.21</dd></div><div><dt>교육대상</dt><dd>KT IT 직무자 및 신입사원 등</dd></div><div><dt>운영규모</dt><dd>총 41회 / 1,023명</dd></div><div><dt>사업유형</dt><dd>기업 IT 직무교육 / 분석·설계 / 반복형 운영</dd></div></dl>
+        <dl class="meta"><div><dt>발주처</dt><dd>한국재정정보원</dd></div><div><dt>수행기간</dt><dd>2024.04–2025.12</dd></div><div><dt>사업예산</dt><dd>2024년 477백만원<br>2025년 670백만원</dd></div><div><dt>수행기관</dt><dd>(주)씨에스리</dd></div></dl>
+        <p class="block-label">연차별 수행 이력</p>
+        <div class="history">
+          <div class="hist"><div class="hy"><span class="yr2">2024년</span>재정데이터 분석 교육 및 유지관리 통합 사업</div><ul class="hist-list"><li>재정데이터 분석교육 체계 구축</li><li>LMS 신규 도입 및 온라인 교육시스템 개설</li><li>대면 실습과정 <b class="m">52회</b> · <b class="m">111일</b> · <b class="m">700시간</b> 운영</li><li>신청인원 <b class="m">1,129명</b> 관리</li><li>온라인 <b class="m">6개</b> 과정 운영</li><li>재정데이터 분석 미니프로젝트 <b class="m">2회</b> 운영</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2025년</span>재정데이터 분석 교육 사업</div><ul class="hist-list"><li>연중 재정데이터 분석교육 운영 확대</li><li>대면 실습과정 <b class="m">70회</b> · <b class="m">154일</b> · <b class="m">984시간</b> 운영</li><li>신청인원 <b class="m">1,393명</b> 관리</li><li>온라인 <b class="m">13개</b> 과정 운영</li><li>신규 온라인 콘텐츠 <b class="m">7개</b> 개발</li><li>재정데이터 분석사례 <b class="m">10건</b> 개발</li></ul></div>
+        </div>
         <p class="block-label">핵심 성과</p>
         <div class="results">
-          <div class="result"><p class="rs">총 <b class="m">41회</b>, <b class="m">1,023명</b> 대상 IT 분석·설계 직무교육을 운영했습니다.</p></div>
-          <div class="result"><p class="rs">평균 만족도 <b class="m">8.50점</b>, 사전·사후 역량평가 기준 평균 <b class="m">31.8%</b>의 역량 향상도를 확인했습니다.</p></div>
-          <div class="result"><p class="rs">데이터모델링 <b class="m">21회</b>·<b class="m">515명</b>, 프로세스모델링 <b class="m">18회</b>·<b class="m">472명</b>을 운영했습니다.</p></div>
-          <div class="result"><p class="rs">시나리오기반 실습 <b class="m">2회</b>·<b class="m">36명</b>을 운영하여 실무 적용형 분석·설계 역량을 강화했습니다.</p></div>
+          <div class="result"><p class="rt">2개년 개별 수주 · 1,147백만원</p><p class="rd">2024 477백만원 · 2025 670백만원</p></div>
+          <div class="result"><p class="rt">대면교육 122회 · 265일 · 1,684시간</p><p class="rd">재정데이터 분석 실습교육 연중 운영체계 확대</p></div>
+          <div class="result"><p class="rt">온라인 과정 6개 → 13개 확장</p><p class="rd">LMS 기반 온라인 교육체계 구축 및 신규 콘텐츠 7개 개발</p></div>
+          <div class="result"><p class="rt">온라인 수강신청 2,969건 · 신규회원 3,069명</p><p class="rd">재정분석교육센터 기반 교육 접근성과 참여 규모 확대</p></div>
         </div>
         <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>데이터모델링·프로세스모델링·시나리오 실습 <b class="m">41회</b> 회차별 운영</li><li>신입사원 및 현업자 대상 회차별 일정·장소·강사 커뮤니케이션 관리</li><li>입과·수료 현황, 만족도, 업무수행 도움 정도 관리</li><li>사전·사후 역량평가 운영 및 교육성과 분석</li><li>담당자 의견과 교육생 피드백을 반영한 운영 개선사항 정리</li></ul>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">연간 교육계획 수립</p><p class="td">대면 실습교육 · 온라인 과정 · 미니프로젝트 · 분석사례 개발 일정 구성</p></div>
+          <div class="task-row"><p class="tt">LMS 운영관리</p><p class="td">온라인 교육시스템 개설 · 회원가입 · 수강신청 · 과정등록 · 학습현황 관리</p></div>
+          <div class="task-row"><p class="tt">대면 실습교육 운영</p><p class="td">Python · Brightics AI · QGIS · ChatGPT 기반 재정데이터 분석 실습과정 운영</p></div>
+          <div class="task-row"><p class="tt">온라인 콘텐츠 개발관리</p><p class="td">신규 온라인 과정 기획 · 콘텐츠 개발 일정 · 교안 · 영상 · 운영 산출물 관리</p></div>
+          <div class="task-row"><p class="tt">미니프로젝트·분석사례 관리</p><p class="td">재정데이터 미니프로젝트 2회 운영 · 분석사례 10건 개발 · 교육용 콘텐츠화</p></div>
+          <div class="task-row"><p class="tt">교육홍보·모집관리</p><p class="td">교육과정 안내 · 신청자 관리 · 교육센터 활성화 홍보자료 운영</p></div>
+          <div class="task-row"><p class="tt">성과관리·결과보고</p><p class="td">수료현황 · 만족도 · 교육실적 · 주간보고 · 월간보고 · 완료보고 자료 문서화</p></div>
+        </div>
+        <div class="deliv">
+          <p class="block-label">산출물 · 행정 문서</p>
+          <div class="items"><span>사업수행계획서</span><span class="sep">·</span><span>착수보고서</span><span class="sep">·</span><span>주간 운영보고서</span><span class="sep">·</span><span>월간 운영보고서</span><span class="sep">·</span><span>과정별 결과보고서</span><span class="sep">·</span><span>만족도 결과보고서</span><span class="sep">·</span><span>역량평가 결과보고서</span><span class="sep">·</span><span>LMS·온라인 운영 결과보고서</span><span class="sep">·</span><span>재정데이터 분석사례집</span><span class="sep">·</span><span>사업수행결과서</span><span class="sep">·</span><span>출결·수료 관리자료</span></div>
+        </div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>연중 교육과 LMS 운영을 함께 관리하면서, 교육사업 PM에게 필요한 역량이 과정 운영뿐 아니라 신청·수강·콘텐츠·실적 데이터를 안정적으로 관리하는 운영체계 설계까지 확장된다는 점을 확인한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">연간 교육계획 수립</span><span class="chip">대면 실습교육 운영</span><span class="chip">LMS 운영관리</span><span class="chip">온라인 콘텐츠 관리</span><span class="chip">신청자·수료현황 관리</span><span class="chip">주간·월간보고</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">교육센터형 운영관리</span><span class="chip">재정데이터 분석교육 이해</span><span class="chip">온라인 교육시스템 운영</span><span class="chip">콘텐츠 개발관리</span><span class="chip">교육실적 데이터 관리</span></div></div>
+        </div>
+        </div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/kpfis-1.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 1" loading="lazy">
+            <img src="images/kpfis-2.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 2" loading="lazy">
+            <img src="images/kpfis-3.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 3" loading="lazy">
+            <img src="images/kpfis-4.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 4" loading="lazy">
+            <img src="images/kpfis-5.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 5" loading="lazy">
+            <img src="images/kpfis-6.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 6" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" id="p04">
+        <p class="p-tag"><b>04</b> &nbsp;/&nbsp; 한국환경공단 · 2025</p>
+        <h2>환경데이터 리더 양성</h2>
+        <p class="summary">2025년 환경분야 AI·데이터 활용 역량강화 사업<br>교육·분석동아리·공모전·성과공유대회 통합 운영<br>환경데이터 기반 프로젝트와 성과확산 체계 운영</p>
+        <p class="block-label">사업 기본정보</p>
+        <dl class="meta"><div><dt>발주처</dt><dd>한국환경공단</dd></div><div><dt>수행기간</dt><dd>2025.05–2025.12</dd></div><div><dt>사업예산</dt><dd>231.8백만원</dd></div><div><dt>수행기관</dt><dd>(주)씨에스리</dd></div></dl>
+        <p class="block-label">핵심 성과</p>
+        <div class="results">
+          <div class="result"><p class="rt">231.8백만원 규모 종합사업 수행</p><p class="rd">교육·분석동아리·공모전·성과공유대회 통합 운영</p></div>
+          <div class="result"><p class="rt">9개 과정 · 13회 · 116시간 · 884명</p><p class="rd">온·오프라인 AI·데이터 교육 운영 및 참여 규모 확보</p></div>
+          <div class="result"><p class="rt">분석동아리 10개 팀 운영</p><p class="rd">AI리더 5팀 · 환경데이터 5팀 프로젝트형 활동 관리</p></div>
+          <div class="result"><p class="rt">공모전 25개 과제 접수 · 16개 발표평가</p><p class="rd">분석동아리 · 공모전 · 성과공유대회 연계 성과확산 체계 운영</p></div>
+        </div>
+        <p class="block-label">주요 과업</p>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">AI·데이터 교육과정 운영</p><p class="td">AI리더 전문교육 · 데이터 전문가 양성교육 · 환경데이터 분석 실습과정 운영</p></div>
+          <div class="task-row"><p class="tt">분석동아리 운영관리</p><p class="td">AI리더 5팀 · 환경데이터 5팀 활동관리, 멘토 연계, 프로젝트 수행현황 관리</p></div>
+          <div class="task-row"><p class="tt">공모전 운영</p><p class="td">직접분석 · 정책활용 · 분석동아리 부문 과제 접수, 평가절차, 발표평가 운영</p></div>
+          <div class="task-row"><p class="tt">성과공유대회 운영</p><p class="td">교육 · 동아리 · 공모전 결과를 연계한 성과발표 및 우수사례 공유 행사 운영</p></div>
+          <div class="task-row"><p class="tt">역량진단 관리</p><p class="td">환경분야 데이터 활용 수준 진단, 결과 취합, 역량강화 방향 도출</p></div>
+          <div class="task-row"><p class="tt">성과 콘텐츠 제작관리</p><p class="td">성과영상 · 우수 분석사례 콘텐츠 · 홍보확산 자료 제작 및 산출물 관리</p></div>
+        </div>
+        <div class="deliv">
+          <p class="block-label">산출물 · 행정 문서</p>
+          <div class="items"><span>착수보고서</span><span class="sep">·</span><span>중간보고서</span><span class="sep">·</span><span>최종보고서</span><span class="sep">·</span><span>교육 운영 결과보고서</span><span class="sep">·</span><span>분석동아리 결과보고서</span><span class="sep">·</span><span>공모전 운영 결과보고서</span><span class="sep">·</span><span>성과공유대회 결과보고서</span><span class="sep">·</span><span>역량진단 결과보고서</span><span class="sep">·</span><span>우수사례 콘텐츠북</span><span class="sep">·</span><span>성과영상</span><span class="sep">·</span><span>최종보고 발표자료</span></div>
+        </div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>교육, 분석동아리, 공모전, 성과공유대회를 하나의 흐름으로 운영하면서, 교육사업의 성과는 개별 과정 운영보다 참여 결과를 조직 내 확산 구조로 연결할 때 더 분명해진다는 점을 확인한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">AI·데이터 교육운영</span><span class="chip">분석동아리 관리</span><span class="chip">공모전 운영</span><span class="chip">성과공유대회 운영</span><span class="chip">역량진단 관리</span><span class="chip">성과콘텐츠 제작관리</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">환경데이터 교육 이해</span><span class="chip">프로젝트형 활동관리</span><span class="chip">평가·발표 운영</span><span class="chip">성과확산 기획</span><span class="chip">홍보자료·영상 제작관리</span></div></div>
+        </div>
+        </div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/env-1.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 1" loading="lazy">
+            <img src="images/env-2.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 2" loading="lazy">
+            <img src="images/env-3.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 3" loading="lazy">
+            <img src="images/env-4.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 4" loading="lazy">
+            <img src="images/env-5.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 5" loading="lazy">
+            <img src="images/env-6.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 6" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" id="p05">
+        <p class="p-tag"><b>05</b> &nbsp;/&nbsp; KT · 2025.01 — 08</p>
+        <h2>IT 직무대상 역량강화를 위한 분석·설계 교육 프로그램</h2>
+        <p class="summary">KT IT 직무자 대상 분석·설계 역량강화 교육<br>데이터모델링·프로세스모델링·시나리오기반 실습 반복 운영<br>사전·사후 역량평가와 만족도 기반 교육효과 관리</p>
+        <p class="block-label">사업 기본정보</p>
+        <dl class="meta"><div><dt>발주처</dt><dd>KT</dd></div><div><dt>수행기간</dt><dd>2025.01–2025.08</dd></div><div><dt>사업예산</dt><dd>282백만원</dd></div><div><dt>수행기관</dt><dd>(주)씨에스리</dd></div></dl>
+        <p class="block-label">핵심 성과</p>
+        <div class="results">
+          <div class="result"><p class="rt">282백만원 규모 · 41회 · 1,023명</p><p class="rd">KT IT 직무자 대상 분석·설계 교육 프로그램 반복 운영</p></div>
+          <div class="result"><p class="rt">평균 만족도 8.50점 · 역량 향상도 31.8%</p><p class="rd">사전·사후 역량평가 기반 교육효과 확인</p></div>
+          <div class="result"><p class="rt">데이터모델링 21회 · 515명</p><p class="rd">데이터 구조 설계 중심 직무교육 운영</p></div>
+          <div class="result"><p class="rt">프로세스모델링 18회 · 472명</p><p class="rd">업무 프로세스 분석·설계 중심 직무교육 운영</p></div>
+        </div>
+        <p class="block-label">주요 과업</p>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">과정별 운영관리</p><p class="td">데이터모델링 · 프로세스모델링 · 시나리오기반 실습 총 41회 운영</p></div>
+          <div class="task-row"><p class="tt">회차별 일정·자원 조율</p><p class="td">신입사원·현업자 대상 일정 · 장소 · 강사 · 교안 · 실습환경 사전 조정</p></div>
+          <div class="task-row"><p class="tt">교육생 운영관리</p><p class="td">과정 안내 · 입과 · 출결 · 수료 · 참여현황 관리</p></div>
+          <div class="task-row"><p class="tt">교육효과 평가</p><p class="td">사전·사후 역량평가 · 만족도 · 업무수행 도움 정도 조사 운영</p></div>
+          <div class="task-row"><p class="tt">실무 적용형 실습 운영</p><p class="td">시나리오기반 실습 2회 · 36명 대상 분석·설계 적용과정 관리</p></div>
+          <div class="task-row"><p class="tt">성과분석·개선관리</p><p class="td">회차·과정별 운영실적과 평가결과 집계 · 담당자 의견과 교육생 피드백 기반 개선안 정리</p></div>
+        </div>
         <div class="deliv">
           <p class="block-label">산출물 · 행정 문서</p>
           <div class="items"><span>교육 운영계획서</span><span class="sep">·</span><span>회차별 운영보고서</span><span class="sep">·</span><span>출결·수료 관리표</span><span class="sep">·</span><span>만족도 결과보고서</span><span class="sep">·</span><span>역량평가 결과보고서</span><span class="sep">·</span><span>교육성과 분석보고서</span><span class="sep">·</span><span>누적 운영 실적표</span><span class="sep">·</span><span>최종 결과보고서</span><span class="sep">·</span><span>최종보고 발표자료</span></div>
         </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">기업 IT 직무교육 운영관리</span></div>
-        <div class="chips"><span class="chip">기업교육운영</span><span class="chip">IT직무교육</span><span class="chip">반복형교육운영</span><span class="chip">회차별운영관리</span><span class="chip">강사커뮤니케이션</span><span class="chip">교육생관리</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">결과보고</span><span class="chip">기업고객대응</span><span class="chip">교육성과분석</span></div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>반복 운영되는 기업 직무교육을 관리하면서, B2B 교육에서는 회차별 안정적 운영뿐 아니라 만족도와 역량향상도 데이터를 통해 교육 품질을 지속적으로 관리하는 것이 중요하다는 점을 확인한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">반복 과정 운영</span><span class="chip">데이터모델링 과정 관리</span><span class="chip">프로세스모델링 과정 관리</span><span class="chip">시나리오 기반 실습 운영</span><span class="chip">사전·사후평가 관리</span><span class="chip">교육효과 분석</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">B2B 직무교육 운영</span><span class="chip">IT 분석·설계 교육 이해</span><span class="chip">과정별 품질관리</span><span class="chip">교육생 피드백 관리</span><span class="chip">역량향상도·만족도 관리</span></div></div>
+        </div>
+        </div>
         <div class="field-photos">
           <p class="block-label">수행 현장</p>
           <div class="gallery reveal">
@@ -635,33 +803,45 @@
 
       <article class="project reveal" id="p06">
         <p class="p-tag"><b>06</b> &nbsp;/&nbsp; NIPA 정보통신산업진흥원 · 2023 — 2024</p>
-        <h2>NIPA 산업전문인력 AI역량강화 · 제조분야</h2>
-        <p class="summary">도심 제조업의 디지털 전환을 위해 제조기업 재직자와 AI융합전문가를 대상으로 운영한 제조-AI 인력양성 사업. 주관기관과 참여기관의 과업이 분리된 컨소시엄 구조에서 ㈜씨에스리는 재직자·AI융합전문가 과정 개발·운영을 담당했습니다.</p>
+        <h2>도심 제조업 디지털 전환 촉진을 위한 AI 산업인력 역량 강화</h2>
+        <p class="summary">2023–2024년 2개년 연속 제조-AI 인력양성 사업<br>서울테크노파크 컨소시엄 참여기관 교육수행<br>재직자·AI융합전문가 과정 개발·운영 및 제조 현장 적용형 AI 교육</p>
         <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>주관체계</dt><dd>주관기관–참여기관 컨소시엄</dd></div><div><dt>참여기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행범위</dt><dd>재직자·AI융합전문가 과정 개발·운영, 실습 지원, 교육생 관리, DX 컨설팅 지원</dd></div><div><dt>사업기간</dt><dd>2023–2024</dd></div><div><dt>교육대상</dt><dd>제조기업 리더·재직자·AI융합전문가</dd></div><div><dt>사업유형</dt><dd>제조-AI 산업인력 양성 / 컨소시엄</dd></div></dl>
-        <p class="cnote"><b>수행범위 안내</b> — 본 사업은 주관기관과 참여기관의 역할이 분리된 컨소시엄 사업입니다. 전체 사업성과와 ㈜씨에스리 참여기관 수행성과를 구분하여 표기합니다. ㈜씨에스리의 직접 수행 범위는 재직자·AI융합전문가 과정 개발·운영, 실습 지원, 교육생 관리, DX 컨설팅 지원입니다.</p>
+        <dl class="meta"><div><dt>발주/전담기관</dt><dd>NIPA 정보통신산업진흥원</dd></div><div><dt>수행기간</dt><dd>2023.04–2024.12</dd></div><div><dt>사업예산</dt><dd>2023년 967백만원<br>2024년 625백만원</dd></div><div><dt>수행기관</dt><dd>주관기관: 서울테크노파크<br>참여기관: (주)씨에스리</dd></div></dl>
+        <p class="cnote"><b>수행범위 안내</b> — 본 사업은 주관기관과 참여기관의 역할이 분리된 컨소시엄 사업입니다. 본 포트폴리오에서는 ㈜씨에스리에서 수행한 성과만 표기합니다. ㈜씨에스리의 직접 수행 범위는 재직자·AI융합전문가 과정 개발·운영, 실습 지원, 교육생 관리, DX 컨설팅 지원입니다.</p>
         <p class="block-label">연차별 수행 이력</p>
         <div class="history">
-          <div class="hist"><div class="hy"><span class="yr2">2023년</span>제조분야 AI역량강화 1차년도</div><ul class="hist-list"><li>전체 <b class="m">428명</b> 수료, 만족도 <b class="m">89점</b>, 수료율 <b class="m">95.3%</b>를 기록했습니다.</li><li>리더 <b class="m">62명</b>, 재직자 <b class="m">286명</b>, AI융합전문가 <b class="m">80명</b>을 양성했습니다.</li></ul></div>
-          <div class="hist"><div class="hy"><span class="yr2">2024년</span>제조분야 AI역량강화 2차년도</div><ul class="hist-list"><li>전체 <b class="m">329명</b> 수료, 만족도 <b class="m">93점</b>, 수료율 <b class="m">97.9%</b>를 기록했습니다.</li><li>리더 <b class="m">61명</b>, 재직자 <b class="m">236명</b>, AI융합전문가 <b class="m">32명</b>을 양성했습니다.</li><li>품질관리·검사지능화 신규과정과 노코드·로우코드 실습을 강화했습니다.</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2023년</span>도심 제조업 디지털 전환 촉진을 위한 AI 산업인력 역량 강화</div><ul class="hist-list"><li>재직자 대상 제조-AI 역량강화 과정 개발·운영</li><li>AI융합전문가 과정 개발·운영</li><li>제조 현장 데이터 활용 중심 실습과정 운영</li><li>교육생 모집·안내·출결·수료 관리</li><li>제조기업 DX 컨설팅 지원</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2024년</span>도심 제조업 디지털 전환 촉진을 위한 AI 산업인력 역량 강화</div><ul class="hist-list"><li>재직자·AI융합전문가 과정 고도화 운영</li><li>제조 현장 적용형 AI·데이터 실습 지원</li><li>교육생 과정 참여 및 수료 관리</li><li>맞춤형 DX 컨설팅 지원 확대</li><li>참여기관 교육수행 범위 성과관리 및 결과보고 지원</li></ul></div>
         </div>
         <p class="block-label">핵심 성과</p>
         <div class="results">
-          <div class="result"><p class="rs">2개년 누적 전체 <b class="m">1,774명</b> 양성 성과를 기록했습니다.</p></div>
-          <div class="result"><p class="rs">오프라인 <b class="m">757명</b>, 온라인 <b class="m">1,017명</b> 교육 실적과 평균 만족도 <b class="m">91점</b>, 평균 수료율 <b class="m">96%</b>를 달성했습니다.</p></div>
-          <div class="result"><p class="rs">제조기업 수요를 반영해 제품기획, 수요예측, 생산추천, 품질관리, 검사지능화 등 제조 현장 적용형 AI 교육과정을 구성했습니다.</p></div>
-          <div class="result"><p class="rs">2024년 비개발자 수요를 반영해 노코드·로우코드 실습과 품질관리 AI 과정을 강화했습니다.</p></div>
-          <div class="result"><p class="rs">DX 심화 컨설팅 <b class="m">11개사</b> 연계를 통해 교육 이후 현장 적용 가능성을 확장했습니다.</p></div>
+          <div class="result"><p class="rt">2개년 연속 참여기관 교육수행</p><p class="rd">재직자·AI융합전문가 과정 개발·운영 범위 담당</p></div>
+          <div class="result"><p class="rt">오프라인 교육 757명 수료</p><p class="rd">제조 현장 적용형 AI·데이터 실습교육 운영성과 확보</p></div>
+          <div class="result"><p class="rt">평균 수료율 96% · 평균 만족도 91점</p><p class="rd">교육 참여관리 및 과정 운영품질 지표 관리</p></div>
+          <div class="result"><p class="rt">DX 심화 컨설팅 11개사 지원</p><p class="rd">제조기업 대상 AI·데이터 활용 과제 발굴 및 적용방향 지원</p></div>
         </div>
         <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>재직자·AI융합전문가 과정 개발·운영</li><li>제조 현장 적용형 AI 커리큘럼 구성 및 교육 운영</li><li>실습 지원, 교육생 관리, 과정별 운영성과 관리</li><li>노코드·로우코드 기반 비개발자 실습 과정 운영 지원</li><li>제조기업 DX 심화 컨설팅 연계 지원</li></ul>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">재직자 과정 개발·운영</p><p class="td">제조업 재직자 대상 AI·데이터 활용 교육과정 구성 및 과정 운영</p></div>
+          <div class="task-row"><p class="tt">AI융합전문가 과정 운영</p><p class="td">제조 현장문제 해결을 위한 AI융합 실습과정 운영 및 교육생 수행관리</p></div>
+          <div class="task-row"><p class="tt">실습 지원</p><p class="td">데이터 분석·AI 모델 활용 실습환경 점검, 실습자료 관리, 교육 운영 지원</p></div>
+          <div class="task-row"><p class="tt">교육생 관리</p><p class="td">교육생 모집 지원, 과정 안내, 출결·수료 기준 관리, 교육 참여현황 취합</p></div>
+          <div class="task-row"><p class="tt">DX 컨설팅 지원</p><p class="td">제조기업 DX 과제 발굴, AI·데이터 활용 방향 정리, 컨설팅 운영 지원</p></div>
+          <div class="task-row"><p class="tt">성과관리·보고 지원</p><p class="td">참여기관 교육수행 범위의 수료현황, 만족도, 운영실적, 결과보고 자료 정리</p></div>
+        </div>
         <div class="deliv">
           <p class="block-label">산출물 · 행정 문서</p>
           <div class="items"><span>수행계획서</span><span class="sep">·</span><span>과정별 운영계획서</span><span class="sep">·</span><span>교육과정 교재</span><span class="sep">·</span><span>과정별 결과보고서</span><span class="sep">·</span><span>수료자 명부</span><span class="sep">·</span><span>만족도 조사 결과</span><span class="sep">·</span><span>성과분석 자료</span><span class="sep">·</span><span>최종 결과보고서</span><span class="sep">·</span><span>DX 컨설팅 관련 산출물</span></div>
         </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">컨소시엄 참여기관 교육 개발·운영 / ㈜씨에스리 수행범위</span></div>
-        <div class="chips"><span class="chip">제조AI인력양성</span><span class="chip">재직자과정</span><span class="chip">AI융합전문가과정</span><span class="chip">산업별AI커리큘럼</span><span class="chip">수요예측</span><span class="chip">검사지능화</span><span class="chip">노코드실습</span><span class="chip">DX컨설팅</span><span class="chip">참여기관교육수행</span></div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>컨소시엄 참여기관으로 제조-AI 교육과정을 수행하면서, 참여기관의 역할은 전체 사업성과를 대신 설명하는 것이 아니라 담당한 교육과정의 운영 품질과 현장 적용 가능성을 명확히 만드는 데 있다는 점을 확인한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">재직자 과정 운영</span><span class="chip">AI융합전문가 과정 운영</span><span class="chip">실습 지원</span><span class="chip">교육생 관리</span><span class="chip">DX 컨설팅 지원</span><span class="chip">참여기관 성과보고 지원</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">컨소시엄 교육수행</span><span class="chip">제조-AI 교육 이해</span><span class="chip">실습형 과정 운영</span><span class="chip">교육생 수료관리</span><span class="chip">DX 과제 발굴 지원</span></div></div>
+        </div>
+        </div>
         <div class="field-photos">
           <p class="block-label">수행 현장</p>
           <div class="gallery reveal">
@@ -676,34 +856,46 @@
       </article>
 
       <article class="project reveal" id="p07">
-        <p class="p-tag"><b>07</b> &nbsp;/&nbsp; 한국에듀테크산업협회(주관) · ㈜씨에스리(참여) · 2022 — 2023</p>
-        <h2>NIPA 산업전문인력 AI역량강화 · 교육분야</h2>
-        <p class="summary">교육산업과 AI 기술의 융합을 목표로 에듀테크·교육서비스 분야 재직자의 AI 활용 역량을 강화한 2개년 인력양성 사업. ㈜씨에스리는 참여기관으로 중간관리자·재직자 및 AI융합전문가 과정 개발·운영을 담당했습니다.</p>
+        <p class="p-tag"><b>07</b> &nbsp;/&nbsp; NIPA 정보통신산업진흥원 · 2022 — 2023</p>
+        <h2>교육산업 AI 융합 전문인력 역량 강화 사업</h2>
+        <p class="summary">2022–2023년 2개년 연속 교육산업 AI융합 인력양성 사업<br>한국에듀테크산업협회 컨소시엄 참여기관 교육수행<br>재직자·AI융합전문가 과정 개발·운영 및 에듀테크 AI 실습교육</p>
         <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>주관기관</dt><dd>한국에듀테크산업협회</dd></div><div><dt>참여기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행범위</dt><dd>중간관리자·재직자 과정 및 AI융합전문가 과정 개발·운영, 교육생 관리, 실습 지원, 홍보 지원</dd></div><div><dt>사업기간</dt><dd>2022–2023</dd></div><div><dt>교육대상</dt><dd>에듀테크·교육서비스 분야 재직자</dd></div><div><dt>사업유형</dt><dd>교육산업 AI융합 인력양성 / 컨소시엄</dd></div></dl>
-        <p class="cnote"><b>수행범위 안내</b> — 본 사업은 주관기관과 참여기관의 역할이 분리된 컨소시엄 사업입니다. 전체 사업성과와 ㈜씨에스리 참여기관 수행성과를 구분하여 표기합니다. ㈜씨에스리는 중간관리자·재직자 과정과 AI융합전문가 과정의 개발·운영, 교육생 관리, 실습 지원, 홍보 지원을 담당했습니다.</p>
+        <dl class="meta"><div><dt>발주/전담기관</dt><dd>NIPA 정보통신산업진흥원</dd></div><div><dt>수행기간</dt><dd>2022.04–2023.12</dd></div><div><dt>사업예산</dt><dd>2022년 1,080백만원<br>2023년 919백만원</dd></div><div><dt>수행기관</dt><dd>주관기관: 한국에듀테크산업협회<br>참여기관: (주)씨에스리</dd></div></dl>
+        <p class="cnote"><b>수행범위 안내</b> — 본 사업은 주관기관과 참여기관의 역할이 분리된 컨소시엄 사업입니다. 본 포트폴리오에서는 ㈜씨에스리에서 수행한 성과만 표기합니다. (주)씨에스리는 중간관리자·재직자 과정과 AI융합전문가 과정의 개발·운영, 교육생 관리, 실습 지원, 홍보 지원을 담당했습니다.</p>
         <p class="block-label">연차별 수행 이력</p>
         <div class="history">
-          <div class="hist"><div class="hy"><span class="yr2">2022년</span>교육산업 AI융합 전문인력 역량강화 1차년도</div><ul class="hist-list"><li>전체 <b class="m">474명</b> 수료, 전체 만족도 <b class="m">88.8점</b>, 수료율 <b class="m">96.7%</b>를 기록했습니다.</li><li>참여기관 직접 과정 기준 <b class="m">390명</b>이 수료했습니다. 중간관리자 <b class="m">328명</b>, AI융합전문가 <b class="m">62명</b>입니다.</li><li>총 <b class="m">22회</b>, <b class="m">924시간</b>을 운영했습니다. 리더 <b class="m">4회</b>, 중간관리자 <b class="m">15회</b>, AI융합전문가 <b class="m">3회</b>입니다.</li></ul></div>
-          <div class="hist"><div class="hy"><span class="yr2">2023년</span>교육산업 AI융합 전문인력 역량강화 2차년도</div><ul class="hist-list"><li>전체 <b class="m">436명</b> 수료, 전체 만족도 <b class="m">88.1점</b>, 수료율 <b class="m">95.0%</b>를 기록했습니다.</li><li>참여기관 직접 과정 기준 <b class="m">355명</b>이 수료했습니다. 재직자 <b class="m">281명</b>, AI융합전문가 <b class="m">74명</b>입니다.</li><li>총 <b class="m">20회</b>, <b class="m">861시간</b>을 운영했습니다. 리더 <b class="m">3회</b>, 재직자 <b class="m">14회</b>, AI융합전문가 <b class="m">3회</b>입니다.</li><li>온라인 콘텐츠 운영 성과로 기존 콘텐츠 <b class="m">862명</b>, 신규 콘텐츠 <b class="m">548명</b>, 총 <b class="m">1,410명</b> 수료를 기록했습니다.</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2022년</span>교육산업 AI 융합 전문인력 역량 강화 사업</div><ul class="hist-list"><li>교육산업 재직자 대상 AI 융합 교육과정 개발·운영</li><li>AI융합전문가 과정 개발·운영</li><li>맞춤형 교육서비스 · 학습자 행동예측 · 교육상담 챗봇 등 에듀테크 AI 주제 반영</li><li>참여기관 직접 과정 기준 <b class="m">390명</b> 수료 관리</li><li>교육생 안내 · 출결 · 수료 · 실습 운영 지원</li></ul></div>
+          <div class="hist"><div class="hy"><span class="yr2">2023년</span>교육산업 AI 융합 전문인력 역량 강화 사업</div><ul class="hist-list"><li>교육산업 재직자 과정 및 AI융합전문가 과정 고도화 운영</li><li>언어지능 · 시각지능 · 추천모델 · AI 서비스 실습 주제 반영</li><li>참여기관 직접 과정 기준 <b class="m">355명</b> 수료 관리</li><li>총 <b class="m">20회</b> · <b class="m">861시간</b> 규모 교육 운영</li><li>교육과정 운영성과 취합 및 결과보고 지원</li></ul></div>
         </div>
         <p class="block-label">핵심 성과</p>
         <div class="results">
-          <div class="result"><p class="rs">2022~2023년 교육산업 AI융합 인력양성 사업에서 참여기관으로 중간관리자·재직자 및 AI융합전문가 과정 개발·운영을 담당했습니다.</p></div>
-          <div class="result"><p class="rs">2개년 전체 사업 기준 <b class="m">910명</b> 수료, 참여기관 직접 과정 기준 <b class="m">745명</b> 수료 성과를 기록했습니다.</p></div>
-          <div class="result"><p class="rs">맞춤형 교육서비스, 학습자 행동예측, 교육상담 챗봇, 학습자 평가·추천모델 등 교육도메인 특화 AI 실습과정을 운영했습니다.</p></div>
-          <div class="result"><p class="rs">오픈채팅, 1:1 출석관리, 강의 다시보기, 실습 멘토 등 재직자 대상 학습지원 체계를 운영했습니다.</p></div>
-          <div class="result"><p class="rs">2023년에는 AI 기반 에듀테크 서비스 기획 및 개발 입문 과정을 신규 개발·운영하여 생성형 AI·노코드 기반 실습 주제를 반영했습니다.</p></div>
+          <div class="result"><p class="rt">2개년 연속 참여기관 교육수행</p><p class="rd">교육산업 재직자 · AI융합전문가 과정 개발·운영 범위 담당</p></div>
+          <div class="result"><p class="rt">참여 기관 주도 운영 과정 745명 수료</p><p class="rd">2022년 390명 · 2023년 355명 수료 관리</p></div>
+          <div class="result"><p class="rt">2023년 20회 · 861시간 교육 운영</p><p class="rd">교육산업 AI 융합 실습과정 운영 규모 확대</p></div>
+          <div class="result"><p class="rt">에듀테크 AI 실습주제 과정화</p><p class="rd">학습자 행동예측 · 교육상담 챗봇 · 추천모델 · 언어지능 · 시각지능 반영</p></div>
         </div>
         <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>중간관리자·재직자 과정 및 AI융합전문가 과정 개발·운영</li><li>교육산업 특화 AI 실습 데이터와 프로젝트형 교육 운영</li><li>교육생 모집·선발 지원, 교육생 관리, 출결·수료 관리</li><li>오픈채팅·강의 다시보기·실습 멘토 등 학습지원 체계 운영</li><li>만족도 조사, 수료율 관리, 결과보고 및 성과자료 작성 지원</li></ul>
+        <div class="task-rows">
+          <div class="task-row"><p class="tt">재직자 과정 개발·운영</p><p class="td">교육산업 재직자 대상 AI 활용 교육과정 구성, 실습 흐름 설계, 과정 운영</p></div>
+          <div class="task-row"><p class="tt">AI융합전문가 과정 운영</p><p class="td">에듀테크 현장문제 해결을 위한 AI 융합 실습과정 운영 및 교육생 수행관리</p></div>
+          <div class="task-row"><p class="tt">실습 주제 구성</p><p class="td">맞춤형 교육서비스 · 학습자 예측 · 챗봇 · 추천모델 · 언어지능 · 시각지능 등 실습주제 반영</p></div>
+          <div class="task-row"><p class="tt">교육생 관리</p><p class="td">교육생 안내, 출결관리, 수료 기준 관리, 교육 참여현황 및 수료현황 취합</p></div>
+          <div class="task-row"><p class="tt">사업 운영·홍보 지원</p><p class="td">교육생 모집 홍보 지원, 과정 안내자료 관리, 운영 커뮤니케이션 지원</p></div>
+          <div class="task-row"><p class="tt">성과관리·보고 지원</p><p class="td">참여기관 교육수행 범위의 수료현황, 운영실적, 과정 결과자료 정리</p></div>
+        </div>
         <div class="deliv">
           <p class="block-label">산출물 · 행정 문서</p>
           <div class="items"><span>수행계획서</span><span class="sep">·</span><span>교육과정 교재</span><span class="sep">·</span><span>과정별 운영계획서</span><span class="sep">·</span><span>회차별 결과보고서</span><span class="sep">·</span><span>수료자 명부</span><span class="sep">·</span><span>만족도 조사 결과</span><span class="sep">·</span><span>실습 프로젝트 결과</span><span class="sep">·</span><span>홍보자료</span><span class="sep">·</span><span>주간보고</span><span class="sep">·</span><span>최종 결과보고서</span><span class="sep">·</span><span>성과분석 자료</span></div>
         </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">컨소시엄 참여기관 교육 개발·운영 / ㈜씨에스리 수행범위</span></div>
-        <div class="chips"><span class="chip">교육산업AI융합</span><span class="chip">에듀테크</span><span class="chip">학습자행동예측</span><span class="chip">교육상담챗봇</span><span class="chip">맞춤형추천모델</span><span class="chip">언어지능</span><span class="chip">시각지능</span><span class="chip">실습멘토</span><span class="chip">참여기관교육수행</span></div>
+        <p class="block-label">수행 포지션 · 적용 역량</p>
+        <div class="cap-panel">
+        <div class="role"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>사업실무책임</span></div>
+        <p class="pm-comment"><span class="pm-label"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>PM 수행 코멘트</span>교육산업 AI 융합 과정을 운영하면서, 에듀테크 분야의 AI 교육은 기술 설명보다 학습자 행동, 추천, 상담, 평가 등 교육서비스 맥락과 연결될 때 실무성이 높아진다는 점을 확인한 사업입니다.</p>
+        <div class="cap-groups">
+          <div class="cap-group"><p class="cap-label">수행 범위</p><div class="chips"><span class="chip">재직자 과정 개발·운영</span><span class="chip">AI융합전문가 과정 운영</span><span class="chip">에듀테크 AI 실습주제 구성</span><span class="chip">교육생 관리</span><span class="chip">사업 운영·홍보 지원</span><span class="chip">참여기관 성과보고 지원</span></div></div>
+          <div class="cap-group"><p class="cap-label">적용 역량</p><div class="chips"><span class="chip">컨소시엄 교육수행</span><span class="chip">에듀테크 AI 교육 이해</span><span class="chip">실습형 과정 운영</span><span class="chip">수료현황 관리</span><span class="chip">교육성과 자료 정리</span></div></div>
+        </div>
+        </div>
         <div class="field-photos">
           <p class="block-label">수행 현장</p>
           <div class="gallery reveal">
@@ -720,11 +912,40 @@
     </div>
   </section>
 
+  <section class="growth">
+    <div class="wrap">
+      <p class="block-label">PM 성장 기록</p>
+      <p class="intro">공공기관·기업 AI·데이터 교육사업을 수행하며, 교육사업 PM의 역할을 과정 운영에서 사업설계·성과관리·AI 활용까지 확장해왔습니다.</p>
+      <div class="growth-path reveal">
+        <div class="growth-step">
+          <span class="gx">01</span>
+          <h3>교육운영에서 사업설계로</h3>
+          <p>기관 요구, 교육대상, 기술 주제를 분석해 교육과정·운영방식·성과관리 구조로 구체화하는 역량을 확장했습니다.</p>
+        </div>
+        <div class="growth-step">
+          <span class="gx">02</span>
+          <h3>과정관리에서 성과관리로</h3>
+          <p>교육생 모집, 출결, 수료, 만족도, 역량평가, 결과보고까지 사업성과로 남는 지표를 관리하는 관점을 갖추었습니다.</p>
+        </div>
+        <div class="growth-step">
+          <span class="gx">03</span>
+          <h3>단일 과정에서 통합 운영으로</h3>
+          <p>교육, 프로젝트, 공모전, 분석사례, 성과공유대회를 연결하며 교육사업을 하나의 성과확산 흐름으로 운영하는 경험을 축적했습니다.</p>
+        </div>
+        <div class="growth-step">
+          <span class="gx">04</span>
+          <h3>AI 교육운영에서 AI 기반 PM으로</h3>
+          <p>AI·데이터 교육사업 수행 경험을 바탕으로, 제안서 분석, 과정기획, 문서화, 성과정리 과정에 AI를 활용하는 PM 역량으로 확장하고 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <p class="note">AI·DATA·AX EDUCATION PROJECT RECORD<br>2022–2025 · 공공기관 · 기업 교육사업 운영 포트폴리오</p>
+    <p class="note">AI·DATA·AX EDUCATION PROJECT RECORD<br>2022–2026 · 공공기관 · 기업 교육사업 운영 포트폴리오<br>KIM JAE EUN · <a class="mail" href="mailto:jekim.lead@gmail.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 8 8 5 8-5"/></svg><span>jekim.lead@gmail.com</span></a></p>
     <a class="top" href="#top">↑ 맨 위로</a>
   </div>
 </footer>
