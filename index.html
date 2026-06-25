@@ -156,7 +156,7 @@
 
   /* ---------- project ---------- */
   .projects{padding-top:clamp(56px,9vw,104px);}
-  .project{padding-top:clamp(48px,8vw,88px);scroll-margin-top:72px;}
+  .project{padding-top:clamp(48px,8vw,88px);padding-bottom:clamp(40px,7vw,72px);scroll-margin-top:72px;}
   .project + .project{border-top:1px solid var(--line);}
   .p-tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;}
   .p-tag b{color:var(--accent);font-weight:500;}
@@ -223,7 +223,7 @@
     font-family:var(--mono);font-size:.76rem;letter-spacing:.04em;
     background:var(--ink);color:#fff;padding:6px 12px;border-radius:2px;
   }
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;margin-bottom:clamp(6px,1.5vw,12px);}
   .chip{
     font-size:.8rem;color:var(--accent);
     background:var(--accent-soft);
@@ -272,11 +272,12 @@
   .foot .top{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark);border:1px solid var(--dark-line);padding:9px 16px;border-radius:2px;transition:background .18s,border-color .18s,color .18s;}
   .foot .top:hover{background:var(--accent-bright);border-color:var(--accent-bright);color:var(--dark);}
 
-  /* ---------- gallery (수행 현장) — soft panel ---------- */
-  .gallery{display:flex;flex-wrap:wrap;gap:14px;margin:0;background:var(--paper-2);border:1px solid var(--line);border-radius:18px;padding:clamp(14px,2.4vw,22px);}
-  .gallery img{height:200px;width:auto;flex:0 0 auto;display:block;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,30,.07);}
-  @media (max-width:760px){ .gallery{gap:10px;border-radius:14px;} .gallery img{height:140px;border-radius:10px;} }
-  @media (max-width:430px){ .gallery img{height:118px;} }
+  /* ---------- gallery (수행 현장) ---------- */
+  .field-photos{margin-top:clamp(28px,4vw,40px);}
+  .gallery{display:flex;flex-wrap:wrap;gap:12px;margin:0;}
+  .gallery img{height:140px;width:auto;flex:0 0 auto;display:block;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,30,.08);}
+  @media (max-width:760px){ .gallery img{height:98px;border-radius:10px;} }
+  @media (max-width:430px){ .gallery img{height:82px;} }
 
   /* ---------- project: badges / history / kpi (작업지시서 반영) ---------- */
   .badges{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 clamp(22px,3.5vw,30px);}
@@ -463,14 +464,16 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">사업실무책임 / 실무 운영 PM</span></div>
         <div class="chips"><span class="chip">교육과정기획</span><span class="chip">프로젝트형교육운영</span><span class="chip">강사·멘토조율</span><span class="chip">교육생관리</span><span class="chip">분석동아리운영</span><span class="chip">공모전운영</span><span class="chip">성과공유운영</span><span class="chip">결과보고</span><span class="chip">AX교육기획</span><span class="chip">이해관계자조율</span></div>
-        <p class="block-label">수행 현장</p>
-        <div class="gallery reveal">
-          <img src="images/env-1.jpg" alt="2025년 환경 데이터 리더 양성사업 참여자 단체 사진" loading="lazy">
-          <img src="images/env-2.jpg" alt="환경 데이터리더 양성 교육 진행 장면 (강의)" loading="lazy">
-          <img src="images/env-3.jpg" alt="환경 데이터리더 양성 교육 진행 장면 (토론형 강의)" loading="lazy">
-          <img src="images/env-4.jpg" alt="환경 데이터리더 양성 교육 진행 장면 (실습)" loading="lazy">
-          <img src="images/env-5.jpg" alt="환경 데이터리더 양성 교육 진행 장면 (발표·논의)" loading="lazy">
-          <img src="images/env-6.jpg" alt="2025년 환경부 AI 리터러시 역량강화 참여자 단체 사진" loading="lazy">
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/env-1.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 1" loading="lazy">
+            <img src="images/env-2.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 2" loading="lazy">
+            <img src="images/env-3.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 3" loading="lazy">
+            <img src="images/env-4.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 4" loading="lazy">
+            <img src="images/env-5.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 5" loading="lazy">
+            <img src="images/env-6.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 6" loading="lazy">
+          </div>
         </div>
       </article>
 
@@ -501,6 +504,17 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">사업실무책임 / 연중 교육운영 PM</span></div>
         <div class="chips"><span class="chip">연중교육운영</span><span class="chip">대규모교육운영</span><span class="chip">LMS운영관리</span><span class="chip">교육생관리</span><span class="chip">강사관리</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">정기보고</span><span class="chip">공공기관교육행정</span><span class="chip">데이터분석교육운영</span><span class="chip">문서행정완결성</span></div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/kpfis-1.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 1" loading="lazy">
+            <img src="images/kpfis-2.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 2" loading="lazy">
+            <img src="images/kpfis-3.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 3" loading="lazy">
+            <img src="images/kpfis-4.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 4" loading="lazy">
+            <img src="images/kpfis-5.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 5" loading="lazy">
+            <img src="images/kpfis-6.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 6" loading="lazy">
+          </div>
+        </div>
       </article>
 
       <article class="project reveal" id="p03">
@@ -531,6 +545,17 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">교육운영 PM / 공공기관 AI·데이터 교육 운영</span></div>
         <div class="chips"><span class="chip">공공기관교육운영</span><span class="chip">AI데이터교육운영</span><span class="chip">과정별운영관리</span><span class="chip">교육생관리</span><span class="chip">강사커뮤니케이션</span><span class="chip">실습환경점검</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">결과보고</span><span class="chip">AI교육주제이해</span><span class="chip">실무형교육운영</span></div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/police-1.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 1" loading="lazy">
+            <img src="images/police-2.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 2" loading="lazy">
+            <img src="images/police-3.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 3" loading="lazy">
+            <img src="images/police-4.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 4" loading="lazy">
+            <img src="images/police-5.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 5" loading="lazy">
+            <img src="images/police-6.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 6" loading="lazy">
+          </div>
+        </div>
       </article>
 
       <article class="project reveal" id="p04">
@@ -560,6 +585,17 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">사업실무책임 / 장기 프로젝트형 교육 PM</span></div>
         <div class="chips"><span class="chip">교육과정기획</span><span class="chip">장기과정운영</span><span class="chip">프로젝트형교육운영</span><span class="chip">강사·멘토조율</span><span class="chip">교육생관리</span><span class="chip">팀프로젝트관리</span><span class="chip">중간발표운영</span><span class="chip">성과발표회운영</span><span class="chip">현업문제기반교육설계</span><span class="chip">성과가시화</span></div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/korail-1.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 1" loading="lazy">
+            <img src="images/korail-2.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 2" loading="lazy">
+            <img src="images/korail-3.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 3" loading="lazy">
+            <img src="images/korail-4.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 4" loading="lazy">
+            <img src="images/korail-5.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 5" loading="lazy">
+            <img src="images/korail-6.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 6" loading="lazy">
+          </div>
+        </div>
       </article>
 
       <article class="project reveal" id="p05">
@@ -584,6 +620,17 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">기업 IT 직무교육 운영관리</span></div>
         <div class="chips"><span class="chip">기업교육운영</span><span class="chip">IT직무교육</span><span class="chip">반복형교육운영</span><span class="chip">회차별운영관리</span><span class="chip">강사커뮤니케이션</span><span class="chip">교육생관리</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">결과보고</span><span class="chip">기업고객대응</span><span class="chip">교육성과분석</span></div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/kt-1.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 1" loading="lazy">
+            <img src="images/kt-2.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 2" loading="lazy">
+            <img src="images/kt-3.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 3" loading="lazy">
+            <img src="images/kt-4.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 4" loading="lazy">
+            <img src="images/kt-5.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 5" loading="lazy">
+            <img src="images/kt-6.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 6" loading="lazy">
+          </div>
+        </div>
       </article>
 
       <article class="project reveal" id="p06">
@@ -615,6 +662,17 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">컨소시엄 참여기관 교육 개발·운영 / ㈜씨에스리 수행범위</span></div>
         <div class="chips"><span class="chip">제조AI인력양성</span><span class="chip">재직자과정</span><span class="chip">AI융합전문가과정</span><span class="chip">산업별AI커리큘럼</span><span class="chip">수요예측</span><span class="chip">검사지능화</span><span class="chip">노코드실습</span><span class="chip">DX컨설팅</span><span class="chip">참여기관교육수행</span></div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/nipa-mfg-1.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 1" loading="lazy">
+            <img src="images/nipa-mfg-2.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 2" loading="lazy">
+            <img src="images/nipa-mfg-3.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 3" loading="lazy">
+            <img src="images/nipa-mfg-4.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 4" loading="lazy">
+            <img src="images/nipa-mfg-5.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 5" loading="lazy">
+            <img src="images/nipa-mfg-6.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 6" loading="lazy">
+          </div>
+        </div>
       </article>
 
       <article class="project reveal" id="p07">
@@ -646,6 +704,17 @@
         <p class="block-label">역할 · 활용 역량</p>
         <div class="role"><span class="badge">컨소시엄 참여기관 교육 개발·운영 / ㈜씨에스리 수행범위</span></div>
         <div class="chips"><span class="chip">교육산업AI융합</span><span class="chip">에듀테크</span><span class="chip">학습자행동예측</span><span class="chip">교육상담챗봇</span><span class="chip">맞춤형추천모델</span><span class="chip">언어지능</span><span class="chip">시각지능</span><span class="chip">실습멘토</span><span class="chip">참여기관교육수행</span></div>
+        <div class="field-photos">
+          <p class="block-label">수행 현장</p>
+          <div class="gallery reveal">
+            <img src="images/nipa-edu-1.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 1" loading="lazy">
+            <img src="images/nipa-edu-2.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 2" loading="lazy">
+            <img src="images/nipa-edu-3.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 3" loading="lazy">
+            <img src="images/nipa-edu-4.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 4" loading="lazy">
+            <img src="images/nipa-edu-5.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 5" loading="lazy">
+            <img src="images/nipa-edu-6.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 6" loading="lazy">
+          </div>
+        </div>
       </article>
 
     </div>
@@ -677,5 +746,21 @@
 })();
 </script>
 
+<script>
+(function(){
+  document.querySelectorAll('.field-photos').forEach(function(fp){
+    var imgs=[].slice.call(fp.querySelectorAll('img')), pending=imgs.length;
+    function settle(){ if(pending<=0 && fp.querySelectorAll('img').length===0){ fp.style.display='none'; } }
+    if(!imgs.length){ fp.style.display='none'; return; }
+    imgs.forEach(function(img){
+      if(img.complete){ if(!img.naturalWidth){ img.remove(); } pending--; settle(); }
+      else{
+        img.addEventListener('load', function(){ pending--; settle(); });
+        img.addEventListener('error', function(){ img.remove(); pending--; settle(); });
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
