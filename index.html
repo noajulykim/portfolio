@@ -43,6 +43,8 @@
     line-height:1.7;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
+    word-break:keep-all;
+    overflow-wrap:break-word;
   }
   a{color:inherit;text-decoration:none;}
   ::selection{background:var(--accent);color:#fff;}
@@ -143,7 +145,7 @@
   .idx-row:hover,.idx-row:focus-visible{background:var(--accent-soft);padding-left:14px;outline:none;}
   .idx-row .ix{font-family:var(--mono);color:var(--accent);font-size:.92rem;font-weight:500;}
   .idx-row .meat .ti{font-weight:600;font-size:1.06rem;letter-spacing:-.01em;line-height:1.35;}
-  .idx-row .meat .cl{font-family:var(--mono);font-size:.74rem;color:var(--muted);letter-spacing:.04em;margin-top:3px;}
+  .idx-row .meat .cl{font-family:var(--mono);font-size:.74rem;color:var(--muted);letter-spacing:.04em;}
   .idx-row .scale{
     font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);
     text-align:right;white-space:nowrap;
@@ -398,37 +400,37 @@
       <div class="idx-list">
         <a class="idx-row" href="#p01">
           <span class="ix">01</span>
-          <span class="meat"><span class="ti">환경 데이터리더 양성사업</span><span class="cl">한국환경공단 · 독립 프로젝트 · 사업실무책임</span><span class="sm">교육·분석동아리·공모전·성과공유 통합 운영</span></span>
+          <span class="meat"><span class="ti">환경 데이터리더 양성사업</span><span class="cl"> · 한국환경공단 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p02">
           <span class="ix">02</span>
-          <span class="meat"><span class="ti">재정데이터 분석교육 운영·고도화 포트폴리오</span><span class="cl">한국재정정보원 · 2024–2025 연차별 개별 수주</span><span class="sm">LMS 구축 → 연중 교육운영 확산</span></span>
+          <span class="meat"><span class="ti">재정데이터 분석교육 운영·고도화 포트폴리오</span><span class="cl"> · 한국재정정보원 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p03">
           <span class="ix">03</span>
-          <span class="meat"><span class="ti">경찰청 AI·데이터 교육사업 포트폴리오</span><span class="cl">경찰청 · 2023–2025 연차별 개별 수주</span><span class="sm">빅데이터 교육 → 생성형 AI·RAG·Agent 교육 고도화</span></span>
+          <span class="meat"><span class="ti">경찰청 AI·데이터 교육사업 포트폴리오</span><span class="cl"> · 경찰청 · 교육운영 PM</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p04">
           <span class="ix">04</span>
-          <span class="meat"><span class="ti">KT IT 직무 분석·설계 역량강화 교육</span><span class="cl">KT · B2B 기업 직무교육 · 반복형 운영</span><span class="sm"><b class="m">41회</b> · <b class="m">1,023명</b> · 평균 만족도 <b class="m">8.50점</b></span></span>
+          <span class="meat"><span class="ti">한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오</span><span class="cl"> · 한국철도공사 · 사업실무책임</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p05">
           <span class="ix">05</span>
-          <span class="meat"><span class="ti">한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오</span><span class="cl">한국철도공사 · 2024–2025 연차별 개별 수주</span><span class="sm">Track 기반 분석교육 → AI서비스 구현형 프로젝트 교육</span></span>
+          <span class="meat"><span class="ti">KT IT 직무 분석·설계 역량강화 교육</span><span class="cl"> · KT · 기업 IT 직무교육 운영관리</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p06">
           <span class="ix">06</span>
-          <span class="meat"><span class="ti">NIPA 산업전문인력 AI역량강화 · 제조분야</span><span class="cl">2023–2024 · 컨소시엄 참여기관 교육수행</span><span class="sm">재직자·AI융합전문가 과정 개발·운영</span></span>
+          <span class="meat"><span class="ti">NIPA 산업전문인력 AI역량강화 · 제조분야</span><span class="cl"> · NIPA 정보통신산업진흥원 · 참여기관 교육수행</span></span>
           <span class="arrow">→</span>
         </a>
         <a class="idx-row" href="#p07">
           <span class="ix">07</span>
-          <span class="meat"><span class="ti">NIPA 산업전문인력 AI역량강화 · 교육분야</span><span class="cl">2022–2023 · 컨소시엄 참여기관 교육수행</span><span class="sm">교육산업 AI융합 재직자·AI융합전문가 과정 운영</span></span>
+          <span class="meat"><span class="ti">NIPA 산업전문인력 AI역량강화 · 교육분야</span><span class="cl"> · 한국에듀테크산업협회 · 참여기관 교육수행</span></span>
           <span class="arrow">→</span>
         </a>
       </div>
@@ -442,7 +444,6 @@
       <article class="project reveal" id="p01">
         <p class="p-tag"><b>01</b> &nbsp;/&nbsp; 한국환경공단 · 2025.05 — 12</p>
         <h2>2025년 환경 데이터리더 양성사업</h2>
-        <div class="badges"><span>독립 프로젝트</span><span>공공 AX·데이터 교육사업</span><span>사업실무책임</span></div>
         <p class="summary">AI·데이터 교육, 분석동아리, 공모전, 성과공유대회, 역량진단, 콘텐츠 제작을 하나의 흐름으로 통합 운영한 환경분야 데이터 활용 역량강화 종합사업.</p>
         <p class="block-label">사업 기본정보</p>
         <dl class="meta"><div><dt>발주처</dt><dd>한국환경공단</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>사업기간</dt><dd>2025.05.27 ~ 2025.12.12</dd></div><div><dt>사업예산</dt><dd>232백만원</dd></div><div><dt>교육대상</dt><dd>기후에너지환경부 및 소속·산하기관 직원</dd></div><div><dt>사업유형</dt><dd>AI·데이터 교육 / 분석동아리 / 공모전 / 성과확산</dd></div></dl>
@@ -476,7 +477,6 @@
       <article class="project reveal" id="p02">
         <p class="p-tag"><b>02</b> &nbsp;/&nbsp; 한국재정정보원 · 2024 — 2025</p>
         <h2>한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오</h2>
-        <div class="badges"><span>연차별 개별 수주</span><span>교육센터형 연중 운영</span><span>LMS·온라인 콘텐츠</span></div>
         <p class="summary">2024년 LMS 기반 교육체계 구축부터 2025년 연중 재정데이터 분석교육 운영·콘텐츠 개발·분석사례 확산까지, 매년 별도 제안·수주를 통해 수행한 공공 데이터교육 운영 포트폴리오.</p>
         <p class="block-label">사업 기본정보</p>
         <dl class="meta"><div><dt>발주처</dt><dd>한국재정정보원</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행기간</dt><dd>2024–2025</dd></div><div><dt>수행방식</dt><dd>연차별 개별 제안·수주</dd></div><div><dt>사업유형</dt><dd>재정데이터 분석교육 / LMS 운영 / 온라인 콘텐츠 / 분석사례 개발</dd></div></dl>
@@ -506,7 +506,6 @@
       <article class="project reveal" id="p03">
         <p class="p-tag"><b>03</b> &nbsp;/&nbsp; 경찰청 · 2023 — 2025</p>
         <h2>경찰청 AI·데이터 교육사업 포트폴리오</h2>
-        <div class="badges"><span>연차별 개별 수주</span><span>공공기관 맞춤교육</span><span>재수주·고도화</span></div>
         <p class="summary">2023~2025년 매년 별도 제안·수주를 통해 수행한 경찰청 맞춤형 빅데이터·AI·데이터 교육사업. 데이터 분석 교육에서 생성형 AI, RAG, AI Agent 등 최신 AI 주제로 고도화된 공공기관 교육 포트폴리오.</p>
         <p class="block-label">사업 기본정보</p>
         <dl class="meta"><div><dt>발주처</dt><dd>경찰청</dd></div><div><dt>수행기간</dt><dd>2023–2025</dd></div><div><dt>수행방식</dt><dd>연차별 개별 제안·수주</dd></div><div><dt>수행조직</dt><dd>㈜씨에스리 수행조직</dd></div><div><dt>사업유형</dt><dd>공공기관 AI·데이터 교육 / 시·도청 분석교육 / 인력풀 교육</dd></div></dl>
@@ -535,34 +534,8 @@
       </article>
 
       <article class="project reveal" id="p04">
-        <p class="p-tag"><b>04</b> &nbsp;/&nbsp; KT · 2025.01 — 08</p>
-        <h2>KT IT 직무 분석·설계 역량강화 교육</h2>
-        <div class="badges"><span>독립 프로젝트</span><span>B2B 기업 직무교육</span><span>반복형 운영</span></div>
-        <p class="summary">KT IT 직무자를 대상으로 데이터모델링, 프로세스모델링, 시나리오기반 실습을 반복 운영하고, 사전·사후 역량평가와 만족도 분석으로 교육효과를 관리한 B2B 기업 직무교육 프로젝트.</p>
-        <p class="block-label">사업 기본정보</p>
-        <dl class="meta"><div><dt>발주처</dt><dd>KT</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>사업기간</dt><dd>2025.01.20 ~ 2025.08.21</dd></div><div><dt>교육대상</dt><dd>KT IT 직무자 및 신입사원 등</dd></div><div><dt>운영규모</dt><dd>총 41회 / 1,023명</dd></div><div><dt>사업유형</dt><dd>기업 IT 직무교육 / 분석·설계 / 반복형 운영</dd></div></dl>
-        <p class="block-label">핵심 성과</p>
-        <div class="results">
-          <div class="result"><p class="rs">총 <b class="m">41회</b>, <b class="m">1,023명</b> 대상 IT 분석·설계 직무교육을 운영했습니다.</p></div>
-          <div class="result"><p class="rs">평균 만족도 <b class="m">8.50점</b>, 사전·사후 역량평가 기준 평균 <b class="m">31.8%</b>의 역량 향상도를 확인했습니다.</p></div>
-          <div class="result"><p class="rs">데이터모델링 <b class="m">21회</b>·<b class="m">515명</b>, 프로세스모델링 <b class="m">18회</b>·<b class="m">472명</b>을 운영했습니다.</p></div>
-          <div class="result"><p class="rs">시나리오기반 실습 <b class="m">2회</b>·<b class="m">36명</b>을 운영하여 실무 적용형 분석·설계 역량을 강화했습니다.</p></div>
-        </div>
-        <p class="block-label">주요 과업</p>
-        <ul class="tasks"><li>데이터모델링·프로세스모델링·시나리오 실습 <b class="m">41회</b> 회차별 운영</li><li>신입사원 및 현업자 대상 회차별 일정·장소·강사 커뮤니케이션 관리</li><li>입과·수료 현황, 만족도, 업무수행 도움 정도 관리</li><li>사전·사후 역량평가 운영 및 교육성과 분석</li><li>담당자 의견과 교육생 피드백을 반영한 운영 개선사항 정리</li></ul>
-        <div class="deliv">
-          <p class="block-label">산출물 · 행정 문서</p>
-          <div class="items"><span>교육 운영계획서</span><span class="sep">·</span><span>회차별 운영보고서</span><span class="sep">·</span><span>출결·수료 관리표</span><span class="sep">·</span><span>만족도 결과보고서</span><span class="sep">·</span><span>역량평가 결과보고서</span><span class="sep">·</span><span>교육성과 분석보고서</span><span class="sep">·</span><span>누적 운영 실적표</span><span class="sep">·</span><span>최종 결과보고서</span><span class="sep">·</span><span>최종보고 발표자료</span></div>
-        </div>
-        <p class="block-label">역할 · 활용 역량</p>
-        <div class="role"><span class="badge">기업 IT 직무교육 운영관리</span></div>
-        <div class="chips"><span class="chip">기업교육운영</span><span class="chip">IT직무교육</span><span class="chip">반복형교육운영</span><span class="chip">회차별운영관리</span><span class="chip">강사커뮤니케이션</span><span class="chip">교육생관리</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">결과보고</span><span class="chip">기업고객대응</span><span class="chip">교육성과분석</span></div>
-      </article>
-
-      <article class="project reveal" id="p05">
-        <p class="p-tag"><b>05</b> &nbsp;/&nbsp; 한국철도공사 · 2024 — 2025</p>
+        <p class="p-tag"><b>04</b> &nbsp;/&nbsp; 한국철도공사 · 2024 — 2025</p>
         <h2>한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오</h2>
-        <div class="badges"><span>연차별 개별 수주</span><span>현업문제 해결형 프로젝트</span><span>AI서비스 구현형 교육</span></div>
         <p class="summary">2024~2025년 매년 별도 제안·수주를 통해 수행한 철도 현업문제 해결형 AI·빅데이터 프로젝트 교육사업. Track 기반 분석교육에서 LLM·RAG·Streamlit 기반 AI서비스 구현형 교육으로 고도화했습니다.</p>
         <p class="block-label">사업 기본정보</p>
         <dl class="meta"><div><dt>발주처</dt><dd>한국철도공사</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행기간</dt><dd>2024–2025</dd></div><div><dt>수행방식</dt><dd>연차별 개별 제안·수주</dd></div><div><dt>사업유형</dt><dd>현업문제 해결형 AI·빅데이터 프로젝트 교육</dd></div></dl>
@@ -589,10 +562,33 @@
         <div class="chips"><span class="chip">교육과정기획</span><span class="chip">장기과정운영</span><span class="chip">프로젝트형교육운영</span><span class="chip">강사·멘토조율</span><span class="chip">교육생관리</span><span class="chip">팀프로젝트관리</span><span class="chip">중간발표운영</span><span class="chip">성과발표회운영</span><span class="chip">현업문제기반교육설계</span><span class="chip">성과가시화</span></div>
       </article>
 
+      <article class="project reveal" id="p05">
+        <p class="p-tag"><b>05</b> &nbsp;/&nbsp; KT · 2025.01 — 08</p>
+        <h2>KT IT 직무 분석·설계 역량강화 교육</h2>
+        <p class="summary">KT IT 직무자를 대상으로 데이터모델링, 프로세스모델링, 시나리오기반 실습을 반복 운영하고, 사전·사후 역량평가와 만족도 분석으로 교육효과를 관리한 B2B 기업 직무교육 프로젝트.</p>
+        <p class="block-label">사업 기본정보</p>
+        <dl class="meta"><div><dt>발주처</dt><dd>KT</dd></div><div><dt>수행기관</dt><dd>㈜씨에스리</dd></div><div><dt>사업기간</dt><dd>2025.01.20 ~ 2025.08.21</dd></div><div><dt>교육대상</dt><dd>KT IT 직무자 및 신입사원 등</dd></div><div><dt>운영규모</dt><dd>총 41회 / 1,023명</dd></div><div><dt>사업유형</dt><dd>기업 IT 직무교육 / 분석·설계 / 반복형 운영</dd></div></dl>
+        <p class="block-label">핵심 성과</p>
+        <div class="results">
+          <div class="result"><p class="rs">총 <b class="m">41회</b>, <b class="m">1,023명</b> 대상 IT 분석·설계 직무교육을 운영했습니다.</p></div>
+          <div class="result"><p class="rs">평균 만족도 <b class="m">8.50점</b>, 사전·사후 역량평가 기준 평균 <b class="m">31.8%</b>의 역량 향상도를 확인했습니다.</p></div>
+          <div class="result"><p class="rs">데이터모델링 <b class="m">21회</b>·<b class="m">515명</b>, 프로세스모델링 <b class="m">18회</b>·<b class="m">472명</b>을 운영했습니다.</p></div>
+          <div class="result"><p class="rs">시나리오기반 실습 <b class="m">2회</b>·<b class="m">36명</b>을 운영하여 실무 적용형 분석·설계 역량을 강화했습니다.</p></div>
+        </div>
+        <p class="block-label">주요 과업</p>
+        <ul class="tasks"><li>데이터모델링·프로세스모델링·시나리오 실습 <b class="m">41회</b> 회차별 운영</li><li>신입사원 및 현업자 대상 회차별 일정·장소·강사 커뮤니케이션 관리</li><li>입과·수료 현황, 만족도, 업무수행 도움 정도 관리</li><li>사전·사후 역량평가 운영 및 교육성과 분석</li><li>담당자 의견과 교육생 피드백을 반영한 운영 개선사항 정리</li></ul>
+        <div class="deliv">
+          <p class="block-label">산출물 · 행정 문서</p>
+          <div class="items"><span>교육 운영계획서</span><span class="sep">·</span><span>회차별 운영보고서</span><span class="sep">·</span><span>출결·수료 관리표</span><span class="sep">·</span><span>만족도 결과보고서</span><span class="sep">·</span><span>역량평가 결과보고서</span><span class="sep">·</span><span>교육성과 분석보고서</span><span class="sep">·</span><span>누적 운영 실적표</span><span class="sep">·</span><span>최종 결과보고서</span><span class="sep">·</span><span>최종보고 발표자료</span></div>
+        </div>
+        <p class="block-label">역할 · 활용 역량</p>
+        <div class="role"><span class="badge">기업 IT 직무교육 운영관리</span></div>
+        <div class="chips"><span class="chip">기업교육운영</span><span class="chip">IT직무교육</span><span class="chip">반복형교육운영</span><span class="chip">회차별운영관리</span><span class="chip">강사커뮤니케이션</span><span class="chip">교육생관리</span><span class="chip">만족도관리</span><span class="chip">역량평가관리</span><span class="chip">결과보고</span><span class="chip">기업고객대응</span><span class="chip">교육성과분석</span></div>
+      </article>
+
       <article class="project reveal" id="p06">
         <p class="p-tag"><b>06</b> &nbsp;/&nbsp; NIPA 정보통신산업진흥원 · 2023 — 2024</p>
         <h2>NIPA 산업전문인력 AI역량강화 · 제조분야</h2>
-        <div class="badges"><span>2개년 연속사업</span><span>컨소시엄 참여기관</span><span>재직자·AI융합전문가 과정 담당</span></div>
         <p class="summary">도심 제조업의 디지털 전환을 위해 제조기업 재직자와 AI융합전문가를 대상으로 운영한 제조-AI 인력양성 사업. 주관기관과 참여기관의 과업이 분리된 컨소시엄 구조에서 ㈜씨에스리는 재직자·AI융합전문가 과정 개발·운영을 담당했습니다.</p>
         <p class="block-label">사업 기본정보</p>
         <dl class="meta"><div><dt>주관체계</dt><dd>주관기관–참여기관 컨소시엄</dd></div><div><dt>참여기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행범위</dt><dd>재직자·AI융합전문가 과정 개발·운영, 실습 지원, 교육생 관리, DX 컨설팅 지원</dd></div><div><dt>사업기간</dt><dd>2023–2024</dd></div><div><dt>교육대상</dt><dd>제조기업 리더·재직자·AI융합전문가</dd></div><div><dt>사업유형</dt><dd>제조-AI 산업인력 양성 / 컨소시엄</dd></div></dl>
@@ -624,7 +620,6 @@
       <article class="project reveal" id="p07">
         <p class="p-tag"><b>07</b> &nbsp;/&nbsp; 한국에듀테크산업협회(주관) · ㈜씨에스리(참여) · 2022 — 2023</p>
         <h2>NIPA 산업전문인력 AI역량강화 · 교육분야</h2>
-        <div class="badges"><span>2개년 연속사업</span><span>컨소시엄 참여기관</span><span>교육산업 AI융합 인력양성</span></div>
         <p class="summary">교육산업과 AI 기술의 융합을 목표로 에듀테크·교육서비스 분야 재직자의 AI 활용 역량을 강화한 2개년 인력양성 사업. ㈜씨에스리는 참여기관으로 중간관리자·재직자 및 AI융합전문가 과정 개발·운영을 담당했습니다.</p>
         <p class="block-label">사업 기본정보</p>
         <dl class="meta"><div><dt>주관기관</dt><dd>한국에듀테크산업협회</dd></div><div><dt>참여기관</dt><dd>㈜씨에스리</dd></div><div><dt>수행범위</dt><dd>중간관리자·재직자 과정 및 AI융합전문가 과정 개발·운영, 교육생 관리, 실습 지원, 홍보 지원</dd></div><div><dt>사업기간</dt><dd>2022–2023</dd></div><div><dt>교육대상</dt><dd>에듀테크·교육서비스 분야 재직자</dd></div><div><dt>사업유형</dt><dd>교육산업 AI융합 인력양성 / 컨소시엄</dd></div></dl>
