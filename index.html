@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -313,27 +313,36 @@
   .gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,30,.08);}
   @media (max-width:760px){ .gallery{grid-template-columns:repeat(2,minmax(0,1fr));} .gallery img{border-radius:10px;} }
   @media (max-width:430px){ .gallery{grid-template-columns:1fr;} }
-  .project-actions{display:flex;justify-content:flex-end;margin-top:18px;}
-  .to-index{
+  .floating-index{
+    position:fixed;
+    right:clamp(14px,2.2vw,28px);
+    bottom:clamp(14px,2.6vw,28px);
+    z-index:70;
     display:inline-flex;
     align-items:center;
     gap:8px;
     font-family:var(--mono);
     font-size:.72rem;
     letter-spacing:.08em;
-    color:var(--muted);
-    border:1px solid var(--line);
-    padding:8px 12px;
+    color:var(--dark);
+    background:rgba(83,211,134,.94);
+    border:1px solid rgba(83,211,134,.72);
+    box-shadow:0 8px 22px rgba(4,22,14,.18);
+    padding:10px 14px;
     border-radius:2px;
-    transition:color .18s,background .18s,border-color .18s,transform .18s;
+    opacity:0;
+    pointer-events:none;
+    transform:translateY(10px);
+    transition:opacity .18s,transform .18s,background .18s,border-color .18s;
   }
-  .to-index:hover,.to-index:focus-visible{
-    color:var(--accent);
-    background:var(--accent-soft);
-    border-color:rgba(10,122,69,.24);
+  .floating-index.is-visible{opacity:1;pointer-events:auto;transform:none;}
+  .floating-index:hover,.floating-index:focus-visible{
+    background:#fff;
+    border-color:var(--accent-bright);
     transform:translateY(-1px);
     outline:none;
   }
+  .floating-index:active{transform:translateY(0);}
 
   /* PM growth */
   .growth{
@@ -433,6 +442,7 @@
     .growth-path{grid-template-columns:1fr;}
     .growth-step{min-height:0;border-right:0;border-bottom:1px solid var(--line);}
     .growth-step:last-child{border-bottom:0;}
+    .floating-index{right:10px;bottom:10px;padding:8px 11px;font-size:.66rem;letter-spacing:.06em;box-shadow:0 6px 16px rgba(4,22,14,.16);}
   }
   @media (max-width:430px){
     .topbar .cname,.topbar .cdiv{display:none;}
@@ -618,7 +628,6 @@
             <img src="images/police-6.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p02">
@@ -672,7 +681,6 @@
             <img src="images/korail-6.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p03">
@@ -727,7 +735,6 @@
             <img src="images/kpfis-6.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p04">
@@ -776,7 +783,6 @@
             <img src="images/env-6.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p05">
@@ -825,7 +831,6 @@
             <img src="images/kt-6.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p06">
@@ -880,7 +885,6 @@
             <img src="images/nipa-mfg-6.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p07">
@@ -935,7 +939,6 @@
             <img src="images/nipa-edu-6.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 6" loading="lazy">
           </div>
         </div>
-        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
     </div>
@@ -978,6 +981,33 @@
     <a class="top" href="#top">↑ 맨 위로</a>
   </div>
 </footer>
+
+<a class="floating-index" href="#project-index" aria-label="사업 목록으로 이동">↑ 목차</a>
+
+<script>
+(function(){
+  var indexBtn = document.querySelector('.floating-index');
+  var projectArea = document.querySelector('.projects');
+  var growthArea = document.querySelector('.growth');
+  var projectIndex = document.getElementById('project-index');
+  if(!indexBtn || !projectArea || !projectIndex) return;
+
+  function updateIndexButton(){
+    var y = window.scrollY || window.pageYOffset;
+    var start = projectArea.offsetTop - 120;
+    var end = growthArea ? growthArea.offsetTop - window.innerHeight * 0.45 : document.body.scrollHeight;
+    indexBtn.classList.toggle('is-visible', y >= start && y < end);
+  }
+
+  indexBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    projectIndex.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+  window.addEventListener('scroll', updateIndexButton, { passive:true });
+  window.addEventListener('resize', updateIndexButton);
+  updateIndexButton();
+})();
+</script>
 
 <script>
 (function(){
@@ -1026,3 +1056,4 @@
 </script>
 </body>
 </html>
+
