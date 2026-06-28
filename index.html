@@ -78,7 +78,7 @@
   .topbar .cmail .ico{width:14px;height:14px;stroke:var(--accent);flex:0 0 auto;}
 
   /* ---------- hero ---------- */
-  .hero{padding-top:clamp(64px,12vw,128px);padding-bottom:clamp(48px,8vw,88px);}
+  .hero{padding-top:clamp(48px,9vw,96px);padding-bottom:clamp(36px,6vw,64px);}
   .hero h1{
     font-weight:600;
     font-size:clamp(2.4rem,6.4vw,4.4rem);
@@ -158,6 +158,7 @@
   .projects{padding-top:clamp(56px,9vw,104px);}
   .project{padding-top:clamp(32px,5vw,56px);padding-bottom:clamp(24px,4vw,40px);scroll-margin-top:72px;}
   .project + .project{border-top:1px solid var(--line);}
+  .index{scroll-margin-top:72px;}
   .p-tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;}
   .p-tag b{color:var(--accent);font-weight:500;}
   .project h2{
@@ -261,7 +262,7 @@
   .cap-group .chips{margin:0;}
 
   /* ---------- scroll cue ---------- */
-  .scroll-cue{margin-top:clamp(48px,8vw,84px);display:flex;align-items:center;gap:14px;color:var(--muted);}
+  .scroll-cue{margin-top:clamp(36px,6vw,60px);display:flex;align-items:center;gap:14px;color:var(--muted);}
   .scroll-cue .lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;}
   .scroll-cue .track{position:relative;width:54px;height:1px;background:var(--line-strong);overflow:hidden;}
   .scroll-cue .track::after{content:"";position:absolute;left:-40%;top:0;width:40%;height:100%;background:var(--accent);animation:slide 2.2s cubic-bezier(.5,0,.2,1) infinite;}
@@ -280,17 +281,17 @@
     color:#fff;
   }
   .band .statement .hl{color:var(--accent-bright);}
-  .band--lead{padding-top:clamp(76px,10vw,124px);padding-bottom:clamp(76px,10vw,124px);}
-  .band--alt{background:var(--dark-2);border-top:1px solid var(--dark-line);padding-top:clamp(76px,10vw,124px);padding-bottom:clamp(76px,10vw,124px);}
+  .band--lead{padding-top:clamp(56px,8vw,92px);padding-bottom:clamp(56px,8vw,92px);}
+  .band--alt{background:var(--dark-2);border-top:1px solid var(--dark-line);padding-top:clamp(56px,8vw,92px);padding-bottom:clamp(56px,8vw,92px);}
 
-  .dstats{margin-top:clamp(44px,6vw,68px);border-top:1px solid var(--dark-line);display:grid;grid-template-columns:repeat(4,1fr);}
+  .dstats{margin-top:clamp(34px,5vw,52px);border-top:1px solid var(--dark-line);display:grid;grid-template-columns:repeat(4,1fr);}
   .dstat{padding:26px 0 6px 3pt;border-right:1px solid var(--dark-line);}
   .dstat:last-child{border-right:0;}
   .dstat .num{font-family:var(--mono);font-weight:500;font-size:clamp(1.9rem,3.8vw,2.9rem);letter-spacing:-.02em;color:var(--accent-bright);line-height:1;}
   .dstat .lab{display:block;margin-top:14px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-muted);}
 
   /* capability pillars (closing band) */
-  .pillars{margin-top:clamp(44px,6vw,68px);display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--dark-line);border-top:1px solid var(--dark-line);border-bottom:1px solid var(--dark-line);}
+  .pillars{margin-top:clamp(34px,5vw,52px);display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--dark-line);border-top:1px solid var(--dark-line);border-bottom:1px solid var(--dark-line);}
   .pillar{background:var(--dark);padding:30px 22px 34px;}
   .pillar .pt{font-weight:600;font-size:1.02rem;color:#fff;letter-spacing:-.01em;margin-bottom:10px;}
   .pillar .pd{font-size:.86rem;color:var(--on-dark-muted);line-height:1.65;}
@@ -312,6 +313,27 @@
   .gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,30,.08);}
   @media (max-width:760px){ .gallery{grid-template-columns:repeat(2,minmax(0,1fr));} .gallery img{border-radius:10px;} }
   @media (max-width:430px){ .gallery{grid-template-columns:1fr;} }
+  .project-actions{display:flex;justify-content:flex-end;margin-top:18px;}
+  .to-index{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.08em;
+    color:var(--muted);
+    border:1px solid var(--line);
+    padding:8px 12px;
+    border-radius:2px;
+    transition:color .18s,background .18s,border-color .18s,transform .18s;
+  }
+  .to-index:hover,.to-index:focus-visible{
+    color:var(--accent);
+    background:var(--accent-soft);
+    border-color:rgba(10,122,69,.24);
+    transform:translateY(-1px);
+    outline:none;
+  }
 
   /* PM growth */
   .growth{
@@ -497,7 +519,7 @@
     </div>
   </section>
   <!-- INDEX -->
-  <section class="index">
+  <section class="index" id="project-index">
     <div class="wrap">
       <div class="sec-head"><span class="n">―</span><span class="t">Index / 사업 목록</span></div>
       <div class="idx-list">
@@ -596,6 +618,7 @@
             <img src="images/police-6.jpg" alt="경찰청 AI·데이터 교육사업 포트폴리오 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p02">
@@ -649,6 +672,7 @@
             <img src="images/korail-6.jpg" alt="한국철도공사 AI·빅데이터 전문가 양성과정 포트폴리오 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p03">
@@ -703,6 +727,7 @@
             <img src="images/kpfis-6.jpg" alt="한국재정정보원 재정데이터 분석교육 운영·고도화 포트폴리오 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p04">
@@ -751,6 +776,7 @@
             <img src="images/env-6.jpg" alt="2025년 환경 데이터리더 양성사업 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p05">
@@ -799,6 +825,7 @@
             <img src="images/kt-6.jpg" alt="KT IT 직무 분석·설계 역량강화 교육 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p06">
@@ -853,6 +880,7 @@
             <img src="images/nipa-mfg-6.jpg" alt="NIPA 산업전문인력 AI역량강화 · 제조분야 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
       <article class="project reveal" id="p07">
@@ -907,6 +935,7 @@
             <img src="images/nipa-edu-6.jpg" alt="NIPA 산업전문인력 AI역량강화 · 교육분야 수행 현장 6" loading="lazy">
           </div>
         </div>
+        <div class="project-actions"><a class="to-index" href="#project-index">↑ 목차로 돌아가기</a></div>
       </article>
 
     </div>
@@ -949,6 +978,18 @@
     <a class="top" href="#top">↑ 맨 위로</a>
   </div>
 </footer>
+
+<script>
+(function(){
+  var topBtn = document.querySelector('.foot .top');
+  if(!topBtn) return;
+  topBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    if(history.replaceState) history.replaceState(null, '', location.href.split('#')[0]);
+  });
+})();
+</script>
 
 <script>
 (function(){
